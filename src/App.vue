@@ -2,6 +2,7 @@
   <div id="app">
     <Home msg="Hello world!" />
     <router-view></router-view>
+    
   </div>
 </template>
 
