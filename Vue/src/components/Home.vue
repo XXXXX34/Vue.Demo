@@ -52,10 +52,10 @@
             request: function() {
                 axios.get('/values')
                     .then(function(response) {
-                        console.log(response);
+                        console.info(response);
                     })
                     .catch(function(error) {
-                        console.log(error);
+                        console.debug(error);
                     });
 
 
@@ -63,28 +63,28 @@
                         name: "hiword"
                     }))
                     .then(function(response) {
-                        console.log(response);
+                        console.info(response);
                     })
                     .catch(function(error) {
-                        console.log(error);
+                        console.debug(error);
                     });
 
                 axios.put('/values/123', JSON.stringify({
                         name: "hiword"
                     }))
                     .then(function(response) {
-                        console.log(response);
+                        console.info(response);
                     })
                     .catch(function(error) {
-                        console.log(error);
+                        console.debug(error);
                     });
 
                 axios.delete('/values/123')
                     .then(function(response) {
-                        console.log(response);
+                        console.info(response);
                     })
                     .catch(function(error) {
-                        console.log(error);
+                        console.debug(error);
                     });
             }
         },
