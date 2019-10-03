@@ -1,5 +1,7 @@
 <template>
-  <div><router-link :to="{ name: 'welcome'}">to welcome</router-link>
+  <div>
+        <SignedInUser />
+    <router-link :to="{ name: 'welcome'}">to welcome</router-link>
   
     <br/>
     <div>
@@ -29,13 +31,17 @@
     </ul>
   </div>
 
-
-
 </template>
 
 <script>
     import axios from 'axios';
+    import SignedInUser from './SignedInUser.vue'
+
     export default {
+        name: 'Home',
+        components: {
+            SignedInUser
+        },
         data() {
             return {
                 product: {

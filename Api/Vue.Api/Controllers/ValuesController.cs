@@ -4,11 +4,14 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Vue.Api.Controllers
 {
     [Route("api/values")]
     [ApiController]
+    [Authorize]
+
     public class ValuesController : ControllerBase
     {
         // GET: api/Values

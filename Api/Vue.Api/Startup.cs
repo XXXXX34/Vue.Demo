@@ -11,6 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using Vue.Api.Extensions;
 
 namespace Vue.Api
 {
@@ -26,10 +27,8 @@ namespace Vue.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddSwaggerGen(c =>
-            {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" });
-            });
+            services.AddCustomSwagger(Configuration);
+            services.AddCustomAuthentication(Configuration);
 
             services.AddCors(options =>
             {
@@ -52,6 +51,11 @@ namespace Vue.Api
             {
                 app.UseDeveloperExceptionPage();
             }
+            var pathBase = Configuration["PATH_BASE"];
+            if (!string.IsNullOrEmpty(pathBase))
+            {
+                app.UsePathBase(pathBase);
+            }
 
             app.UseCors(MyAllowSpecificOrigins);
 
@@ -59,13 +63,17 @@ namespace Vue.Api
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
-            app.UseSwagger();
-            app.UseSwaggerUI(c =>
-            {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
-            });
+            app.UseSwagger()
+               .UseSwaggerUI(c =>
+               {
+                   c.SwaggerEndpoint($"{ (!string.IsNullOrEmpty(pathBase) ? pathBase : string.Empty) }/swagger/v1/swagger.json", "Vue API V1");
+                   c.OAuthClientId("vue.api.swaggerui");
+                   c.OAuthAppName("vue.api.swaggerui");
+               });
+
 
             app.UseEndpoints(endpoints =>
             {
