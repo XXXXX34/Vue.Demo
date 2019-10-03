@@ -4,6 +4,9 @@
     <br/>
     <div>
       Name:<input type="text" v-model="product.name">
+      <div>
+        <span>{{product.name | capitalize}}</span>
+      </div>
     </div>
     <div>
       Leves:<label>高</label> <input type="checkbox"  value="H" v-model="product.leves"/>
@@ -16,12 +19,12 @@
     <h1>Lazy</h1>
     <div>
       <div><input type="text" v-model="product.price" lazy debounce="5000"></div>
-      <div>showName:{{product.price}}</div>
+      <div>showPrice:{{product.price}}</div>
       <div>ComputedResult:{{total}}</div>
     </div>
 
-  <div>Search:<input type="text" v-model="searchText" ></div>
-    <ul v-for="(item, index) in product.leves" :key="index">
+  <div>Search:<input type="text" ></div>
+    <ul v-for="(item, index) in product.leves " :key="index">
       <li >{{index}}{{item}}</li>
     </ul>
   </div>
