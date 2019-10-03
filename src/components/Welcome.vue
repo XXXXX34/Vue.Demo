@@ -1,12 +1,13 @@
 <template>
-    <span><router-link :to="{ name: 'home', params: { id: 123 }}">to home</router-link></span>
+    <span><router-link :to="{ name: 'home'}">to home</router-link></span>
 </template>
 
 <script>
-export default {
+    export default {
 
-};
+    };
 </script>
 
 <style scoped>
+
 </style>
