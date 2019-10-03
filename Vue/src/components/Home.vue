@@ -14,7 +14,7 @@
       <label>低</label> <input type="checkbox"  value="L" v-model="product.leves"/>
     </div>
     <div>
-      <button v-on:click="show">show</button>
+      <button v-on:click="show">show</button>   <button v-on:click="request">request</button>
     </div>
     <h1>Lazy</h1>
     <div>
@@ -34,6 +34,7 @@
 </template>
 
 <script>
+    import axios from 'axios';
     export default {
         data() {
             return {
@@ -47,6 +48,44 @@
         methods: {
             show: function() {
                 alert(JSON.stringify(this.product));
+            },
+            request: function() {
+                axios.get('/values')
+                    .then(function(response) {
+                        console.log(response);
+                    })
+                    .catch(function(error) {
+                        console.log(error);
+                    });
+
+
+                axios.post('/values', JSON.stringify({
+                        name: "hiword"
+                    }))
+                    .then(function(response) {
+                        console.log(response);
+                    })
+                    .catch(function(error) {
+                        console.log(error);
+                    });
+
+                axios.put('/values/123', JSON.stringify({
+                        name: "hiword"
+                    }))
+                    .then(function(response) {
+                        console.log(response);
+                    })
+                    .catch(function(error) {
+                        console.log(error);
+                    });
+
+                axios.delete('/values/123')
+                    .then(function(response) {
+                        console.log(response);
+                    })
+                    .catch(function(error) {
+                        console.log(error);
+                    });
             }
         },
         computed: {

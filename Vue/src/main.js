@@ -3,6 +3,14 @@ import VueRouter from "vue-router";
 import App from './App.vue';
 import Welcome from './components/Welcome.vue';
 import Home from './components/Home.vue';
+import axios from 'axios';
+
+
+Vue.prototype.$axios = axios
+axios.defaults.baseURL = 'http://localhost:5000/api';
+axios.defaults.headers.common['Authorization'] = "";
+axios.defaults.headers.post['Content-Type'] = 'application/json';
+axios.defaults.headers.put['Content-Type'] = 'application/json';
 
 Vue.config.productionTip = true;
 Vue.use(VueRouter);

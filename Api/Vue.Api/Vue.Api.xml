@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Vue.Api</name>
+    </assembly>
+    <members>
+        <member name="T:Vue.Api.Controllers.CreateCommand">
+            <summary>
+            创建
+            </summary>
+        </member>
+        <member name="T:Vue.Api.Controllers.UpdateCommand">
+            <summary>
+            修改
+            </summary>
+        </member>
+    </members>
+</doc>
