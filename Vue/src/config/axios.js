@@ -3,7 +3,7 @@ import axios from 'axios';
 import store from '../store';
 
 Vue.prototype.$axios = axios
-axios.defaults.baseURL = 'http://localhost:5004/api';
+axios.defaults.baseURL = 'http://47.112.212.161:9102/api';
 axios.defaults.headers.common['Authorization'] = "Bearer " + store.state.oidcStore.access_token;
 axios.defaults.headers.post['Content-Type'] = 'application/json';
 axios.defaults.headers.put['Content-Type'] = 'application/json';

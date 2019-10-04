@@ -1,6 +1,6 @@
 //export const oidcSettings = JSON.parse(process.env.VUE_APP_OIDC_CONFIG)id_token token
 export const oidcSettings = {
-    "authority": "http://localhost:5000",
+    "authority": " http://47.112.212.161:9101",
     "clientId": "js",
     "redirectUri": "http://localhost:8080/oidc-callback",
     "responseType": "code",

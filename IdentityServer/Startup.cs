@@ -6,6 +6,7 @@ using System;
 using IdentityServer4;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 
@@ -14,10 +15,12 @@ namespace IdentityServer
     public class Startup
     {
         public IHostingEnvironment Environment { get; }
+        public IConfiguration Configuration { get; }
 
-        public Startup(IHostingEnvironment environment)
+        public Startup(IHostingEnvironment environment, IConfiguration configuration)
         {
             Environment = environment;
+            Configuration = configuration;
         }
 
         public void ConfigureServices(IServiceCollection services)
@@ -30,14 +33,14 @@ namespace IdentityServer
                 .AddInMemoryClients(Config.GetClients())
                 .AddTestUsers(Config.GetUsers());
 
-            if (Environment.IsDevelopment())
+            //if (Environment.IsDevelopment())
             {
                 builder.AddDeveloperSigningCredential();
             }
-            else
-            {
-                throw new Exception("need to configure key material");
-            }
+            //else
+            //{
+            //    throw new Exception("need to configure key material");
+            //}
 
             services.AddAuthentication()
                 .AddGoogle("Google", options =>

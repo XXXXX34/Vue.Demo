@@ -1,0 +1,1157 @@
+2019-10-04 13:34:44.141 +08:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-10-04 13:34:44.299 +08:00 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-10-04 13:34:44.304 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-10-04 13:34:44.305 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-10-04 13:34:44.307 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-10-04 13:34:44.308 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-10-04 13:34:44.309 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-10-04 13:35:11.296 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:8080
+2019-10-04 13:35:11.418 +08:00 [DBG] Client list checked and origin: http://localhost:8080 is allowed
+2019-10-04 13:35:11.423 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-10-04 13:35:11.840 +08:00 [DBG] Login Url: /Account/Login
+2019-10-04 13:35:11.841 +08:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-10-04 13:35:11.848 +08:00 [DBG] Logout Url: /Account/Logout
+2019-10-04 13:35:11.849 +08:00 [DBG] ConsentUrl Url: /consent
+2019-10-04 13:35:11.851 +08:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-10-04 13:35:11.852 +08:00 [DBG] Error Url: /home/error
+2019-10-04 13:35:11.854 +08:00 [DBG] Error Id Parameter: errorId
+2019-10-04 13:35:11.955 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-10-04 13:35:11.973 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-10-04 13:35:12.009 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-10-04 13:35:12.037 +08:00 [DBG] Start discovery request
+2019-10-04 13:35:12.354 +08:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2019-10-04 13:35:12.416 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2019-10-04 13:35:12.421 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2019-10-04 13:35:12.436 +08:00 [DBG] Start authorize request
+2019-10-04 13:35:12.504 +08:00 [DBG] No user present in authorize request
+2019-10-04 13:35:12.535 +08:00 [DBG] Start authorize request protocol validation
+2019-10-04 13:35:12.579 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:35:12.590 +08:00 [DBG] Checking for PKCE parameters
+2019-10-04 13:35:12.649 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-10-04 13:35:12.668 +08:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2019-10-04 13:35:12.673 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2019-10-04 13:35:12.684 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2019-10-04 13:35:12.688 +08:00 [DBG] Start authorize request
+2019-10-04 13:35:12.701 +08:00 [DBG] No user present in authorize request
+2019-10-04 13:35:12.706 +08:00 [DBG] Start authorize request protocol validation
+2019-10-04 13:35:12.717 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:35:12.722 +08:00 [DBG] Checking for PKCE parameters
+2019-10-04 13:35:12.730 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-10-04 13:35:12.737 +08:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"js","ClientName":"JavaScript Client","RedirectUri":"http://localhost:8080/silent-renew-oidc.html","AllowedRedirectUris":["http://localhost:8080/oidc-callback","http://localhost:8080/silent-renew-oidc.html","http://47.112.212.161:9100/oidc-callback","http://47.112.212.161:9100/silent-renew-oidc.html"],"SubjectId":"anonymous","ResponseType":"code","ResponseMode":"query","GrantType":"authorization_code","RequestedScopes":"openid profile vue.api","State":"3b983b2738aa416683815612b69dc252","UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":"none","MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"client_id":"js","redirect_uri":"http://localhost:8080/silent-renew-oidc.html","response_type":"code","scope":"openid profile vue.api","state":"3b983b2738aa416683815612b69dc252","code_challenge":"s5Yd3kKTgbgmM2U0oH05Pncv2TTlSx3PqOwVqUG7TvQ","code_challenge_method":"S256","prompt":"none","response_mode":"query"},"$type":"AuthorizeRequestValidationLog"}
+2019-10-04 13:35:12.737 +08:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"js","ClientName":"JavaScript Client","RedirectUri":"http://localhost:8080/oidc-callback","AllowedRedirectUris":["http://localhost:8080/oidc-callback","http://localhost:8080/silent-renew-oidc.html","http://47.112.212.161:9100/oidc-callback","http://47.112.212.161:9100/silent-renew-oidc.html"],"SubjectId":"anonymous","ResponseType":"code","ResponseMode":"query","GrantType":"authorization_code","RequestedScopes":"openid profile vue.api","State":"6a3ed1aea0844524998e7bdfebe9b5aa","UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"client_id":"js","redirect_uri":"http://localhost:8080/oidc-callback","response_type":"code","scope":"openid profile vue.api","state":"6a3ed1aea0844524998e7bdfebe9b5aa","code_challenge":"maxNpuWh3wFQj1ch3rKIAhX43-P2jpIztRhiW-aN2gA","code_challenge_method":"S256","response_mode":"query"},"$type":"AuthorizeRequestValidationLog"}
+2019-10-04 13:35:12.819 +08:00 [INF] Showing login: User is not authenticated
+2019-10-04 13:35:12.819 +08:00 [INF] Showing error: prompt=none was requested but user is not authenticated
+2019-10-04 13:35:12.835 +08:00 [INF] {"ClientId":"js","ClientName":"JavaScript Client","RedirectUri":"http://localhost:8080/silent-renew-oidc.html","AllowedRedirectUris":["http://localhost:8080/oidc-callback","http://localhost:8080/silent-renew-oidc.html","http://47.112.212.161:9100/oidc-callback","http://47.112.212.161:9100/silent-renew-oidc.html"],"SubjectId":"anonymous","ResponseType":"code","ResponseMode":"query","GrantType":"authorization_code","RequestedScopes":"openid profile vue.api","State":"3b983b2738aa416683815612b69dc252","UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":"none","MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"client_id":"js","redirect_uri":"http://localhost:8080/silent-renew-oidc.html","response_type":"code","scope":"openid profile vue.api","state":"3b983b2738aa416683815612b69dc252","code_challenge":"s5Yd3kKTgbgmM2U0oH05Pncv2TTlSx3PqOwVqUG7TvQ","code_challenge_method":"S256","prompt":"none","response_mode":"query"},"$type":"AuthorizeRequestValidationLog"}
+2019-10-04 13:35:13.917 +08:00 [DBG] Start authorize request protocol validation
+2019-10-04 13:35:13.918 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:35:13.924 +08:00 [DBG] Checking for PKCE parameters
+2019-10-04 13:35:13.926 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-10-04 13:35:13.931 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:35:16.161 +08:00 [DBG] CORS request made for path: /Account/Login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2019-10-04 13:35:16.429 +08:00 [DBG] Start authorize request protocol validation
+2019-10-04 13:35:16.433 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:35:16.436 +08:00 [DBG] Checking for PKCE parameters
+2019-10-04 13:35:16.446 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-10-04 13:35:16.495 +08:00 [DBG] Augmenting SignInContext
+2019-10-04 13:35:16.501 +08:00 [DBG] Adding idp claim with value: local
+2019-10-04 13:35:16.502 +08:00 [DBG] Adding amr claim with value: pwd
+2019-10-04 13:35:16.536 +08:00 [INF] AuthenticationScheme: idsrv signed in.
+2019-10-04 13:35:16.547 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:35:16.578 +08:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2019-10-04 13:35:16.583 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2019-10-04 13:35:16.585 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2019-10-04 13:35:16.599 +08:00 [DBG] Start authorize callback request
+2019-10-04 13:35:16.617 +08:00 [DBG] User in authorize request: 1
+2019-10-04 13:35:16.617 +08:00 [DBG] Start authorize request protocol validation
+2019-10-04 13:35:16.620 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:35:16.631 +08:00 [DBG] Checking for PKCE parameters
+2019-10-04 13:35:16.633 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-10-04 13:35:16.636 +08:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"js","ClientName":"JavaScript Client","RedirectUri":"http://localhost:8080/oidc-callback","AllowedRedirectUris":["http://localhost:8080/oidc-callback","http://localhost:8080/silent-renew-oidc.html","http://47.112.212.161:9100/oidc-callback","http://47.112.212.161:9100/silent-renew-oidc.html"],"SubjectId":"1","ResponseType":"code","ResponseMode":"query","GrantType":"authorization_code","RequestedScopes":"openid profile vue.api","State":"6a3ed1aea0844524998e7bdfebe9b5aa","UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":"e01a20a74fbdf6cda39ac66c2f68f24b","Raw":{"client_id":"js","redirect_uri":"http://localhost:8080/oidc-callback","response_type":"code","scope":"openid profile vue.api","state":"6a3ed1aea0844524998e7bdfebe9b5aa","code_challenge":"maxNpuWh3wFQj1ch3rKIAhX43-P2jpIztRhiW-aN2gA","code_challenge_method":"S256","response_mode":"query"},"$type":"AuthorizeRequestValidationLog"}
+2019-10-04 13:35:16.676 +08:00 [DBG] IsActive called from: AuthorizeEndpoint
+2019-10-04 13:35:16.722 +08:00 [DBG] user_consent grant with value: js|1 not found in store.
+2019-10-04 13:35:16.751 +08:00 [DBG] Found no prior consent from consent store, consent is required
+2019-10-04 13:35:16.759 +08:00 [INF] Showing consent: User has not yet consented
+2019-10-04 13:35:16.815 +08:00 [DBG] Start authorize request protocol validation
+2019-10-04 13:35:16.816 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:35:16.821 +08:00 [DBG] Checking for PKCE parameters
+2019-10-04 13:35:16.822 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-10-04 13:35:16.831 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:35:18.159 +08:00 [DBG] CORS request made for path: /consent from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2019-10-04 13:35:18.243 +08:00 [DBG] Start authorize request protocol validation
+2019-10-04 13:35:18.243 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:35:18.248 +08:00 [DBG] Checking for PKCE parameters
+2019-10-04 13:35:18.250 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-10-04 13:35:18.279 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:35:18.294 +08:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2019-10-04 13:35:18.296 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2019-10-04 13:35:18.299 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2019-10-04 13:35:18.302 +08:00 [DBG] Start authorize callback request
+2019-10-04 13:35:18.320 +08:00 [DBG] User in authorize request: 1
+2019-10-04 13:35:18.324 +08:00 [DBG] Start authorize request protocol validation
+2019-10-04 13:35:18.328 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:35:18.332 +08:00 [DBG] Checking for PKCE parameters
+2019-10-04 13:35:18.335 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-10-04 13:35:18.340 +08:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"js","ClientName":"JavaScript Client","RedirectUri":"http://localhost:8080/oidc-callback","AllowedRedirectUris":["http://localhost:8080/oidc-callback","http://localhost:8080/silent-renew-oidc.html","http://47.112.212.161:9100/oidc-callback","http://47.112.212.161:9100/silent-renew-oidc.html"],"SubjectId":"1","ResponseType":"code","ResponseMode":"query","GrantType":"authorization_code","RequestedScopes":"openid profile vue.api","State":"6a3ed1aea0844524998e7bdfebe9b5aa","UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":"e01a20a74fbdf6cda39ac66c2f68f24b","Raw":{"client_id":"js","redirect_uri":"http://localhost:8080/oidc-callback","response_type":"code","scope":"openid profile vue.api","state":"6a3ed1aea0844524998e7bdfebe9b5aa","code_challenge":"maxNpuWh3wFQj1ch3rKIAhX43-P2jpIztRhiW-aN2gA","code_challenge_method":"S256","response_mode":"query"},"$type":"AuthorizeRequestValidationLog"}
+2019-10-04 13:35:18.366 +08:00 [DBG] IsActive called from: AuthorizeEndpoint
+2019-10-04 13:35:18.369 +08:00 [DBG] user_consent grant with value: js|1 not found in store.
+2019-10-04 13:35:18.379 +08:00 [DBG] Found no prior consent from consent store, consent is required
+2019-10-04 13:35:18.400 +08:00 [INF] User consented to scopes: ["openid","profile","vue.api"]
+2019-10-04 13:35:18.411 +08:00 [DBG] User indicated to remember consent for scopes: ["openid","profile","vue.api"]
+2019-10-04 13:35:18.430 +08:00 [DBG] Client allows remembering consent, and consent given. Updating consent store for subject: 1
+2019-10-04 13:35:18.482 +08:00 [DBG] Creating Authorization Code Flow response.
+2019-10-04 13:35:18.525 +08:00 [INF] Authorize endpoint response
+{"SubjectId":"1","ClientId":"js","RedirectUri":"http://localhost:8080/oidc-callback","State":"6a3ed1aea0844524998e7bdfebe9b5aa","Scope":"openid profile vue.api","Error":null,"ErrorDescription":null,"$type":"AuthorizeResponseLog"}
+2019-10-04 13:35:18.559 +08:00 [DBG] Augmenting SignInContext
+2019-10-04 13:35:18.560 +08:00 [INF] AuthenticationScheme: idsrv signed in.
+2019-10-04 13:35:18.875 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:8080
+2019-10-04 13:35:18.881 +08:00 [DBG] Client list checked and origin: http://localhost:8080 is allowed
+2019-10-04 13:35:18.884 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-10-04 13:35:18.886 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-10-04 13:35:18.896 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-10-04 13:35:18.909 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-10-04 13:35:18.913 +08:00 [DBG] Start discovery request
+2019-10-04 13:35:18.947 +08:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2019-10-04 13:35:18.965 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2019-10-04 13:35:18.975 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2019-10-04 13:35:18.980 +08:00 [DBG] Start authorize request
+2019-10-04 13:35:18.981 +08:00 [DBG] User in authorize request: 1
+2019-10-04 13:35:18.982 +08:00 [DBG] Start authorize request protocol validation
+2019-10-04 13:35:18.984 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:35:18.993 +08:00 [DBG] Checking for PKCE parameters
+2019-10-04 13:35:18.995 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-10-04 13:35:18.999 +08:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"js","ClientName":"JavaScript Client","RedirectUri":"http://localhost:8080/silent-renew-oidc.html","AllowedRedirectUris":["http://localhost:8080/oidc-callback","http://localhost:8080/silent-renew-oidc.html","http://47.112.212.161:9100/oidc-callback","http://47.112.212.161:9100/silent-renew-oidc.html"],"SubjectId":"1","ResponseType":"code","ResponseMode":"query","GrantType":"authorization_code","RequestedScopes":"openid profile vue.api","State":"5f4db30525e34f8b9f63c3cd22a10327","UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":"none","MaxAge":null,"LoginHint":null,"SessionId":"e01a20a74fbdf6cda39ac66c2f68f24b","Raw":{"client_id":"js","redirect_uri":"http://localhost:8080/silent-renew-oidc.html","response_type":"code","scope":"openid profile vue.api","state":"5f4db30525e34f8b9f63c3cd22a10327","code_challenge":"et0oeQ2h2YRInsP9d7deArMJCeT11hYgVpky5h6b3fI","code_challenge_method":"S256","prompt":"none","response_mode":"query"},"$type":"AuthorizeRequestValidationLog"}
+2019-10-04 13:35:19.027 +08:00 [DBG] IsActive called from: AuthorizeEndpoint
+2019-10-04 13:35:19.061 +08:00 [DBG] Consent found in consent store is same as current request, consent is not required
+2019-10-04 13:35:19.066 +08:00 [DBG] Creating Authorization Code Flow response.
+2019-10-04 13:35:19.082 +08:00 [INF] Authorize endpoint response
+{"SubjectId":"1","ClientId":"js","RedirectUri":"http://localhost:8080/silent-renew-oidc.html","State":"5f4db30525e34f8b9f63c3cd22a10327","Scope":"openid profile vue.api","Error":null,"ErrorDescription":null,"$type":"AuthorizeResponseLog"}
+2019-10-04 13:35:19.254 +08:00 [DBG] CORS request made for path: /connect/token from origin: http://localhost:8080
+2019-10-04 13:35:19.258 +08:00 [DBG] Client list checked and origin: http://localhost:8080 is allowed
+2019-10-04 13:35:19.261 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-10-04 13:35:19.275 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2019-10-04 13:35:19.293 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-10-04 13:35:19.295 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-10-04 13:35:19.312 +08:00 [DBG] Start token request.
+2019-10-04 13:35:19.327 +08:00 [DBG] Start client validation
+2019-10-04 13:35:19.340 +08:00 [DBG] Start parsing Basic Authentication secret
+2019-10-04 13:35:19.344 +08:00 [DBG] Start parsing for secret in post body
+2019-10-04 13:35:19.345 +08:00 [DBG] client id without secret found
+2019-10-04 13:35:19.346 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2019-10-04 13:35:19.347 +08:00 [DBG] Secret id found: js
+2019-10-04 13:35:19.352 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:35:19.356 +08:00 [DBG] Public Client - skipping secret validation success
+2019-10-04 13:35:19.357 +08:00 [DBG] Client validation success
+2019-10-04 13:35:19.367 +08:00 [DBG] Start token request validation
+2019-10-04 13:35:19.387 +08:00 [DBG] Start validation of authorization code token request
+2019-10-04 13:35:19.416 +08:00 [DBG] Client required a proof key for code exchange. Starting PKCE validation
+2019-10-04 13:35:19.426 +08:00 [DBG] IsActive called from: AuthorizationCodeValidation
+2019-10-04 13:35:19.427 +08:00 [DBG] Validation of authorization code token request success
+2019-10-04 13:35:19.433 +08:00 [INF] Token request validation success
+{"ClientId":"js","ClientName":"JavaScript Client","GrantType":"authorization_code","Scopes":null,"AuthorizationCode":"4af657422e4faa806141fbe253e1c8dfdcebda20c8fd4d5dc10517baf2712552","RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"client_id":"js","code":"4af657422e4faa806141fbe253e1c8dfdcebda20c8fd4d5dc10517baf2712552","redirect_uri":"http://localhost:8080/silent-renew-oidc.html","code_verifier":"24acc4cf3cd741ed9d264bd01685beb0de69c967ca4d4219ae3a00fc2c12b87d1e56ee2163334302973be7d7993a3aa3","grant_type":"authorization_code"},"$type":"TokenRequestValidationLog"}
+2019-10-04 13:35:19.497 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:35:19.539 +08:00 [DBG] Getting claims for access token for client: js
+2019-10-04 13:35:19.541 +08:00 [DBG] Getting claims for access token for subject: 1
+2019-10-04 13:35:19.549 +08:00 [DBG] Get profile called for subject 1 from client JavaScript Client with claim types [] via ClaimsProviderAccessToken
+2019-10-04 13:35:19.565 +08:00 [DBG] Issued claims: []
+2019-10-04 13:35:19.766 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:35:19.781 +08:00 [DBG] Getting claims for identity token for subject: 1 and client: js
+2019-10-04 13:35:19.786 +08:00 [DBG] Get profile called for subject 1 from client JavaScript Client with claim types ["name","family_name","given_name","middle_name","nickname","preferred_username","profile","picture","website","gender","birthdate","zoneinfo","locale","updated_at"] via ClaimsProviderIdentityToken
+2019-10-04 13:35:19.797 +08:00 [DBG] Issued claims: ["name","website"]
+2019-10-04 13:35:19.808 +08:00 [DBG] Token request success.
+2019-10-04 13:35:19.825 +08:00 [DBG] CORS request made for path: /connect/userinfo from origin: http://localhost:8080
+2019-10-04 13:35:19.828 +08:00 [DBG] Client list checked and origin: http://localhost:8080 is allowed
+2019-10-04 13:35:19.831 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-10-04 13:35:19.839 +08:00 [DBG] CORS request made for path: /connect/userinfo from origin: http://localhost:8080
+2019-10-04 13:35:19.841 +08:00 [DBG] Client list checked and origin: http://localhost:8080 is allowed
+2019-10-04 13:35:19.844 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-10-04 13:35:19.845 +08:00 [DBG] Request path /connect/userinfo matched to endpoint type Userinfo
+2019-10-04 13:35:19.848 +08:00 [DBG] Endpoint enabled: Userinfo, successfully created handler: IdentityServer4.Endpoints.UserInfoEndpoint
+2019-10-04 13:35:19.856 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.UserInfoEndpoint for /connect/userinfo
+2019-10-04 13:35:19.874 +08:00 [DBG] Start userinfo request
+2019-10-04 13:35:19.881 +08:00 [DBG] Bearer token found in header
+2019-10-04 13:35:20.022 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:35:20.030 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:35:20.033 +08:00 [DBG] IsActive called from: AccessTokenValidation
+2019-10-04 13:35:20.040 +08:00 [DBG] Calling into custom token validator: IdentityServer4.Validation.DefaultCustomTokenValidator
+2019-10-04 13:35:20.045 +08:00 [DBG] Token validation success
+{"ClientId":null,"ClientName":null,"ValidateLifetime":true,"AccessTokenType":"Jwt","ExpectedScope":"openid","TokenHandle":null,"JwtId":null,"Claims":{"nbf":1570167319,"exp":1570170919,"iss":"http://localhost:5000","aud":["http://localhost:5000/resources","vue.api"],"client_id":"js","sub":"1","auth_time":1570167316,"idp":"local","scope":["openid","profile","vue.api"],"amr":"pwd"},"$type":"TokenValidationLog"}
+2019-10-04 13:35:20.064 +08:00 [DBG] IsActive called from: UserInfoRequestValidation
+2019-10-04 13:35:20.078 +08:00 [DBG] Creating userinfo response
+2019-10-04 13:35:20.095 +08:00 [DBG] Scopes in access token: openid profile vue.api
+2019-10-04 13:35:20.102 +08:00 [DBG] Scopes in access token: openid profile vue.api
+2019-10-04 13:35:20.123 +08:00 [DBG] Requested claim types: sub name family_name given_name middle_name nickname preferred_username profile picture website gender birthdate zoneinfo locale updated_at
+2019-10-04 13:35:20.128 +08:00 [DBG] Scopes in access token: openid profile vue.api
+2019-10-04 13:35:20.130 +08:00 [DBG] Get profile called for subject 1 from client JavaScript Client with claim types ["sub","name","family_name","given_name","middle_name","nickname","preferred_username","profile","picture","website","gender","birthdate","zoneinfo","locale","updated_at"] via UserInfoEndpoint
+2019-10-04 13:35:20.142 +08:00 [DBG] Issued claims: ["name","website"]
+2019-10-04 13:35:20.146 +08:00 [INF] Profile service returned the following claim types: name website
+2019-10-04 13:35:20.149 +08:00 [DBG] End userinfo request
+2019-10-04 13:35:20.176 +08:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2019-10-04 13:35:20.182 +08:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2019-10-04 13:35:20.185 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2019-10-04 13:35:20.194 +08:00 [DBG] Rendering check session result
+2019-10-04 13:35:21.052 +08:00 [DBG] Request path /connect/endsession matched to endpoint type Endsession
+2019-10-04 13:35:21.060 +08:00 [DBG] Endpoint enabled: Endsession, successfully created handler: IdentityServer4.Endpoints.EndSessionEndpoint
+2019-10-04 13:35:21.062 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.EndSessionEndpoint for /connect/endsession
+2019-10-04 13:35:21.082 +08:00 [DBG] Processing signout request for 1
+2019-10-04 13:35:21.098 +08:00 [DBG] Start end session request validation
+2019-10-04 13:35:21.113 +08:00 [DBG] Start identity token validation
+2019-10-04 13:35:21.124 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:35:21.126 +08:00 [DBG] Client found: js / JavaScript Client
+2019-10-04 13:35:21.135 +08:00 [DBG] IsActive called from: IdentityTokenValidation
+2019-10-04 13:35:21.137 +08:00 [DBG] Calling into custom token validator: IdentityServer4.Validation.DefaultCustomTokenValidator
+2019-10-04 13:35:21.142 +08:00 [DBG] Token validation success
+{"ClientId":"js","ClientName":"JavaScript Client","ValidateLifetime":false,"AccessTokenType":null,"ExpectedScope":null,"TokenHandle":null,"JwtId":null,"Claims":{"nbf":1570167319,"exp":1570167619,"iss":"http://localhost:5000","aud":"js","iat":1570167319,"at_hash":"OUq6GuVa70EYw8aLxbiEQg","sid":"e01a20a74fbdf6cda39ac66c2f68f24b","sub":"1","auth_time":1570167316,"idp":"local","name":"Alice","website":"https://alice.com","amr":"pwd"},"$type":"TokenValidationLog"}
+2019-10-04 13:35:21.162 +08:00 [INF] End session request validation success
+{"ClientId":"js","ClientName":"JavaScript Client","SubjectId":"1","PostLogOutUri":null,"State":null,"Raw":{"id_token_hint":"eyJhbGciOiJSUzI1NiIsImtpZCI6Ijc0YjBjYTdjOTNhMTcxNTFiYmVmNGZmMWEyY2I0NjIyIiwidHlwIjoiSldUIn0.eyJuYmYiOjE1NzAxNjczMTksImV4cCI6MTU3MDE2NzYxOSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1MDAwIiwiYXVkIjoianMiLCJpYXQiOjE1NzAxNjczMTksImF0X2hhc2giOiJPVXE2R3VWYTcwRVl3OGFMeGJpRVFnIiwic2lkIjoiZTAxYTIwYTc0ZmJkZjZjZGEzOWFjNjZjMmY2OGYyNGIiLCJzdWIiOiIxIiwiYXV0aF90aW1lIjoxNTcwMTY3MzE2LCJpZHAiOiJsb2NhbCIsIm5hbWUiOiJBbGljZSIsIndlYnNpdGUiOiJodHRwczovL2FsaWNlLmNvbSIsImFtciI6WyJwd2QiXX0.GVMIAN4HyYyLK6ZSh8gWzobrJmoWRObM5lLHWeMjbZ28AxXU-GMhfJH7sO9odmFTbQIDs4rIN9nTl94petQaIbKUiilzvaGd5ZXJYD2eUvmL1vXta9jbKms-s9aTHiwYRvFP6H9taGyEanPhvPGiJxbWmtuWX3q-Bbtma3mq6lN7PXHNMh5678tW9bx8yY-8ooeGplBx18yBY5hYtu9BbyDudwRxEH-E5B_eIGn7CeIaM1BG9RvSVcanEZEN-uCSK028VO-Lt8rR7R8NZ1XrRc5pca6Ugrl6Jvvgud-aXNI_Yt-gmF1zkqyg7WWPe4wLwwOu-pQPT0PdF7-e76bV0Q"},"$type":"EndSessionRequestValidationLog"}
+2019-10-04 13:35:21.181 +08:00 [DBG] Success validating end session request from js
+2019-10-04 13:35:21.293 +08:00 [INF] AuthenticationScheme: idsrv signed out.
+2019-10-04 13:35:21.402 +08:00 [DBG] Request path /connect/endsession/callback matched to endpoint type Endsession
+2019-10-04 13:35:21.426 +08:00 [DBG] Endpoint enabled: Endsession, successfully created handler: IdentityServer4.Endpoints.EndSessionCallbackEndpoint
+2019-10-04 13:35:21.429 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.EndSessionCallbackEndpoint for /connect/endsession/callback
+2019-10-04 13:35:21.447 +08:00 [DBG] Processing signout callback request
+2019-10-04 13:35:21.479 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:35:21.485 +08:00 [DBG] No client front-channel logout URLs
+2019-10-04 13:35:21.490 +08:00 [DBG] No client back-channel logout URLs
+2019-10-04 13:35:21.493 +08:00 [INF] Successful signout callback.
+2019-10-04 13:35:21.495 +08:00 [DBG] No client front-channel iframe urls
+2019-10-04 13:35:21.497 +08:00 [DBG] No client back-channel iframe urls
+2019-10-04 13:36:14.708 +08:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-10-04 13:36:14.865 +08:00 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-10-04 13:36:14.877 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-10-04 13:36:14.881 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-10-04 13:36:14.884 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-10-04 13:36:14.884 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-10-04 13:36:14.885 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-10-04 13:36:24.448 +08:00 [DBG] Login Url: /Account/Login
+2019-10-04 13:36:24.452 +08:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-10-04 13:36:24.456 +08:00 [DBG] Logout Url: /Account/Logout
+2019-10-04 13:36:24.458 +08:00 [DBG] ConsentUrl Url: /consent
+2019-10-04 13:36:24.459 +08:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-10-04 13:36:24.460 +08:00 [DBG] Error Url: /home/error
+2019-10-04 13:36:24.461 +08:00 [DBG] Error Id Parameter: errorId
+2019-10-04 13:36:24.500 +08:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2019-10-04 13:36:24.522 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2019-10-04 13:36:24.529 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2019-10-04 13:36:24.543 +08:00 [DBG] Start authorize request
+2019-10-04 13:36:24.604 +08:00 [DBG] No user present in authorize request
+2019-10-04 13:36:24.626 +08:00 [DBG] Start authorize request protocol validation
+2019-10-04 13:36:24.660 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:36:24.673 +08:00 [DBG] Checking for PKCE parameters
+2019-10-04 13:36:24.731 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-10-04 13:36:24.759 +08:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"js","ClientName":"JavaScript Client","RedirectUri":"http://localhost:8080/silent-renew-oidc.html","AllowedRedirectUris":["http://localhost:8080/oidc-callback","http://localhost:8080/silent-renew-oidc.html","http://47.112.212.161:9100/oidc-callback","http://47.112.212.161:9100/silent-renew-oidc.html"],"SubjectId":"anonymous","ResponseType":"code","ResponseMode":"query","GrantType":"authorization_code","RequestedScopes":"openid profile vue.api","State":"80abafe3e1d9479dbcec8ab41c4a52aa","UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":"none","MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"client_id":"js","redirect_uri":"http://localhost:8080/silent-renew-oidc.html","response_type":"code","scope":"openid profile vue.api","state":"80abafe3e1d9479dbcec8ab41c4a52aa","code_challenge":"lBRKKbRbcjhaOliZEpetsYpJMyLp3xz8rLCqH6wUf-k","code_challenge_method":"S256","prompt":"none","response_mode":"query"},"$type":"AuthorizeRequestValidationLog"}
+2019-10-04 13:36:24.810 +08:00 [INF] Showing error: prompt=none was requested but user is not authenticated
+2019-10-04 13:36:24.821 +08:00 [INF] {"ClientId":"js","ClientName":"JavaScript Client","RedirectUri":"http://localhost:8080/silent-renew-oidc.html","AllowedRedirectUris":["http://localhost:8080/oidc-callback","http://localhost:8080/silent-renew-oidc.html","http://47.112.212.161:9100/oidc-callback","http://47.112.212.161:9100/silent-renew-oidc.html"],"SubjectId":"anonymous","ResponseType":"code","ResponseMode":"query","GrantType":"authorization_code","RequestedScopes":"openid profile vue.api","State":"80abafe3e1d9479dbcec8ab41c4a52aa","UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":"none","MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"client_id":"js","redirect_uri":"http://localhost:8080/silent-renew-oidc.html","response_type":"code","scope":"openid profile vue.api","state":"80abafe3e1d9479dbcec8ab41c4a52aa","code_challenge":"lBRKKbRbcjhaOliZEpetsYpJMyLp3xz8rLCqH6wUf-k","code_challenge_method":"S256","prompt":"none","response_mode":"query"},"$type":"AuthorizeRequestValidationLog"}
+2019-10-04 13:36:25.497 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:8080
+2019-10-04 13:36:25.519 +08:00 [DBG] Client list checked and origin: http://localhost:8080 is allowed
+2019-10-04 13:36:25.521 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-10-04 13:36:25.528 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-10-04 13:36:25.544 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-10-04 13:36:25.547 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-10-04 13:36:25.561 +08:00 [DBG] Start discovery request
+2019-10-04 13:36:25.648 +08:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2019-10-04 13:36:25.657 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2019-10-04 13:36:25.662 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2019-10-04 13:36:25.668 +08:00 [DBG] Start authorize request
+2019-10-04 13:36:25.669 +08:00 [DBG] No user present in authorize request
+2019-10-04 13:36:25.671 +08:00 [DBG] Start authorize request protocol validation
+2019-10-04 13:36:25.678 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:36:25.681 +08:00 [DBG] Checking for PKCE parameters
+2019-10-04 13:36:25.683 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-10-04 13:36:25.693 +08:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"js","ClientName":"JavaScript Client","RedirectUri":"http://localhost:8080/silent-renew-oidc.html","AllowedRedirectUris":["http://localhost:8080/oidc-callback","http://localhost:8080/silent-renew-oidc.html","http://47.112.212.161:9100/oidc-callback","http://47.112.212.161:9100/silent-renew-oidc.html"],"SubjectId":"anonymous","ResponseType":"code","ResponseMode":"query","GrantType":"authorization_code","RequestedScopes":"openid profile vue.api","State":"2f55f4e752554e52a386a7d60fca7a2f","UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":"none","MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"client_id":"js","redirect_uri":"http://localhost:8080/silent-renew-oidc.html","response_type":"code","scope":"openid profile vue.api","state":"2f55f4e752554e52a386a7d60fca7a2f","code_challenge":"pSPoD51TczfQSVoVcFKJuxR_zXwoaqgLnEQbAcG5q1Y","code_challenge_method":"S256","prompt":"none","response_mode":"query"},"$type":"AuthorizeRequestValidationLog"}
+2019-10-04 13:36:25.723 +08:00 [INF] Showing error: prompt=none was requested but user is not authenticated
+2019-10-04 13:36:25.725 +08:00 [INF] {"ClientId":"js","ClientName":"JavaScript Client","RedirectUri":"http://localhost:8080/silent-renew-oidc.html","AllowedRedirectUris":["http://localhost:8080/oidc-callback","http://localhost:8080/silent-renew-oidc.html","http://47.112.212.161:9100/oidc-callback","http://47.112.212.161:9100/silent-renew-oidc.html"],"SubjectId":"anonymous","ResponseType":"code","ResponseMode":"query","GrantType":"authorization_code","RequestedScopes":"openid profile vue.api","State":"2f55f4e752554e52a386a7d60fca7a2f","UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":"none","MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"client_id":"js","redirect_uri":"http://localhost:8080/silent-renew-oidc.html","response_type":"code","scope":"openid profile vue.api","state":"2f55f4e752554e52a386a7d60fca7a2f","code_challenge":"pSPoD51TczfQSVoVcFKJuxR_zXwoaqgLnEQbAcG5q1Y","code_challenge_method":"S256","prompt":"none","response_mode":"query"},"$type":"AuthorizeRequestValidationLog"}
+2019-10-04 13:36:26.540 +08:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2019-10-04 13:36:26.551 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2019-10-04 13:36:26.557 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2019-10-04 13:36:26.561 +08:00 [DBG] Start authorize request
+2019-10-04 13:36:26.564 +08:00 [DBG] No user present in authorize request
+2019-10-04 13:36:26.568 +08:00 [DBG] Start authorize request protocol validation
+2019-10-04 13:36:26.573 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:36:26.577 +08:00 [DBG] Checking for PKCE parameters
+2019-10-04 13:36:26.580 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-10-04 13:36:26.591 +08:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"js","ClientName":"JavaScript Client","RedirectUri":"http://localhost:8080/oidc-callback","AllowedRedirectUris":["http://localhost:8080/oidc-callback","http://localhost:8080/silent-renew-oidc.html","http://47.112.212.161:9100/oidc-callback","http://47.112.212.161:9100/silent-renew-oidc.html"],"SubjectId":"anonymous","ResponseType":"code","ResponseMode":"query","GrantType":"authorization_code","RequestedScopes":"openid profile vue.api","State":"198d975e5d3e41e089331f7366fc2b3c","UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"client_id":"js","redirect_uri":"http://localhost:8080/oidc-callback","response_type":"code","scope":"openid profile vue.api","state":"198d975e5d3e41e089331f7366fc2b3c","code_challenge":"BqmH3W5s7mM7_zXl5Ltk5nDodUn7vhG_jGoxQ_MXfp4","code_challenge_method":"S256","response_mode":"query"},"$type":"AuthorizeRequestValidationLog"}
+2019-10-04 13:36:26.612 +08:00 [INF] Showing login: User is not authenticated
+2019-10-04 13:36:26.880 +08:00 [DBG] Start authorize request protocol validation
+2019-10-04 13:36:26.881 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:36:26.887 +08:00 [DBG] Checking for PKCE parameters
+2019-10-04 13:36:26.889 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-10-04 13:36:26.893 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:36:28.309 +08:00 [DBG] CORS request made for path: /Account/Login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2019-10-04 13:36:28.396 +08:00 [DBG] Start authorize request protocol validation
+2019-10-04 13:36:28.397 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:36:28.405 +08:00 [DBG] Checking for PKCE parameters
+2019-10-04 13:36:28.407 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-10-04 13:36:28.442 +08:00 [DBG] Augmenting SignInContext
+2019-10-04 13:36:28.447 +08:00 [DBG] Adding idp claim with value: local
+2019-10-04 13:36:28.451 +08:00 [DBG] Adding amr claim with value: pwd
+2019-10-04 13:36:28.476 +08:00 [INF] AuthenticationScheme: idsrv signed in.
+2019-10-04 13:36:28.486 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:36:28.494 +08:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2019-10-04 13:36:28.500 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2019-10-04 13:36:28.503 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2019-10-04 13:36:28.516 +08:00 [DBG] Start authorize callback request
+2019-10-04 13:36:28.522 +08:00 [DBG] User in authorize request: 1
+2019-10-04 13:36:28.523 +08:00 [DBG] Start authorize request protocol validation
+2019-10-04 13:36:28.526 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:36:28.529 +08:00 [DBG] Checking for PKCE parameters
+2019-10-04 13:36:28.532 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-10-04 13:36:28.536 +08:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"js","ClientName":"JavaScript Client","RedirectUri":"http://localhost:8080/oidc-callback","AllowedRedirectUris":["http://localhost:8080/oidc-callback","http://localhost:8080/silent-renew-oidc.html","http://47.112.212.161:9100/oidc-callback","http://47.112.212.161:9100/silent-renew-oidc.html"],"SubjectId":"1","ResponseType":"code","ResponseMode":"query","GrantType":"authorization_code","RequestedScopes":"openid profile vue.api","State":"198d975e5d3e41e089331f7366fc2b3c","UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":"f9ca5370619cf16fb6d48f2858b6fc98","Raw":{"client_id":"js","redirect_uri":"http://localhost:8080/oidc-callback","response_type":"code","scope":"openid profile vue.api","state":"198d975e5d3e41e089331f7366fc2b3c","code_challenge":"BqmH3W5s7mM7_zXl5Ltk5nDodUn7vhG_jGoxQ_MXfp4","code_challenge_method":"S256","response_mode":"query"},"$type":"AuthorizeRequestValidationLog"}
+2019-10-04 13:36:28.554 +08:00 [DBG] IsActive called from: AuthorizeEndpoint
+2019-10-04 13:36:28.576 +08:00 [DBG] user_consent grant with value: js|1 not found in store.
+2019-10-04 13:36:28.581 +08:00 [DBG] Found no prior consent from consent store, consent is required
+2019-10-04 13:36:28.584 +08:00 [INF] Showing consent: User has not yet consented
+2019-10-04 13:36:28.620 +08:00 [DBG] Start authorize request protocol validation
+2019-10-04 13:36:28.621 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:36:28.626 +08:00 [DBG] Checking for PKCE parameters
+2019-10-04 13:36:28.627 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-10-04 13:36:28.629 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:36:30.116 +08:00 [DBG] CORS request made for path: /consent from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2019-10-04 13:36:30.175 +08:00 [DBG] Start authorize request protocol validation
+2019-10-04 13:36:30.176 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:36:30.185 +08:00 [DBG] Checking for PKCE parameters
+2019-10-04 13:36:30.186 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-10-04 13:36:30.216 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:36:30.224 +08:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2019-10-04 13:36:30.226 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2019-10-04 13:36:30.232 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2019-10-04 13:36:30.235 +08:00 [DBG] Start authorize callback request
+2019-10-04 13:36:30.247 +08:00 [DBG] User in authorize request: 1
+2019-10-04 13:36:30.248 +08:00 [DBG] Start authorize request protocol validation
+2019-10-04 13:36:30.249 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:36:30.251 +08:00 [DBG] Checking for PKCE parameters
+2019-10-04 13:36:30.252 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-10-04 13:36:30.257 +08:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"js","ClientName":"JavaScript Client","RedirectUri":"http://localhost:8080/oidc-callback","AllowedRedirectUris":["http://localhost:8080/oidc-callback","http://localhost:8080/silent-renew-oidc.html","http://47.112.212.161:9100/oidc-callback","http://47.112.212.161:9100/silent-renew-oidc.html"],"SubjectId":"1","ResponseType":"code","ResponseMode":"query","GrantType":"authorization_code","RequestedScopes":"openid profile vue.api","State":"198d975e5d3e41e089331f7366fc2b3c","UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":"f9ca5370619cf16fb6d48f2858b6fc98","Raw":{"client_id":"js","redirect_uri":"http://localhost:8080/oidc-callback","response_type":"code","scope":"openid profile vue.api","state":"198d975e5d3e41e089331f7366fc2b3c","code_challenge":"BqmH3W5s7mM7_zXl5Ltk5nDodUn7vhG_jGoxQ_MXfp4","code_challenge_method":"S256","response_mode":"query"},"$type":"AuthorizeRequestValidationLog"}
+2019-10-04 13:36:30.277 +08:00 [DBG] IsActive called from: AuthorizeEndpoint
+2019-10-04 13:36:30.283 +08:00 [DBG] user_consent grant with value: js|1 not found in store.
+2019-10-04 13:36:30.285 +08:00 [DBG] Found no prior consent from consent store, consent is required
+2019-10-04 13:36:30.294 +08:00 [INF] User consented to scopes: ["openid","profile","vue.api"]
+2019-10-04 13:36:30.302 +08:00 [DBG] User indicated to remember consent for scopes: ["openid","profile","vue.api"]
+2019-10-04 13:36:30.312 +08:00 [DBG] Client allows remembering consent, and consent given. Updating consent store for subject: 1
+2019-10-04 13:36:30.337 +08:00 [DBG] Creating Authorization Code Flow response.
+2019-10-04 13:36:30.381 +08:00 [INF] Authorize endpoint response
+{"SubjectId":"1","ClientId":"js","RedirectUri":"http://localhost:8080/oidc-callback","State":"198d975e5d3e41e089331f7366fc2b3c","Scope":"openid profile vue.api","Error":null,"ErrorDescription":null,"$type":"AuthorizeResponseLog"}
+2019-10-04 13:36:30.416 +08:00 [DBG] Augmenting SignInContext
+2019-10-04 13:36:30.417 +08:00 [INF] AuthenticationScheme: idsrv signed in.
+2019-10-04 13:36:30.531 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:8080
+2019-10-04 13:36:30.536 +08:00 [DBG] Client list checked and origin: http://localhost:8080 is allowed
+2019-10-04 13:36:30.539 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-10-04 13:36:30.543 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-10-04 13:36:30.551 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-10-04 13:36:30.584 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-10-04 13:36:30.605 +08:00 [DBG] Start discovery request
+2019-10-04 13:36:30.619 +08:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2019-10-04 13:36:30.628 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2019-10-04 13:36:30.631 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2019-10-04 13:36:30.636 +08:00 [DBG] Start authorize request
+2019-10-04 13:36:30.639 +08:00 [DBG] User in authorize request: 1
+2019-10-04 13:36:30.640 +08:00 [DBG] Start authorize request protocol validation
+2019-10-04 13:36:30.643 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:36:30.649 +08:00 [DBG] Checking for PKCE parameters
+2019-10-04 13:36:30.652 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-10-04 13:36:30.656 +08:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"js","ClientName":"JavaScript Client","RedirectUri":"http://localhost:8080/silent-renew-oidc.html","AllowedRedirectUris":["http://localhost:8080/oidc-callback","http://localhost:8080/silent-renew-oidc.html","http://47.112.212.161:9100/oidc-callback","http://47.112.212.161:9100/silent-renew-oidc.html"],"SubjectId":"1","ResponseType":"code","ResponseMode":"query","GrantType":"authorization_code","RequestedScopes":"openid profile vue.api","State":"0325142d39004a66ab861d4a89751907","UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":"none","MaxAge":null,"LoginHint":null,"SessionId":"f9ca5370619cf16fb6d48f2858b6fc98","Raw":{"client_id":"js","redirect_uri":"http://localhost:8080/silent-renew-oidc.html","response_type":"code","scope":"openid profile vue.api","state":"0325142d39004a66ab861d4a89751907","code_challenge":"OfZ9xLUyNXodbDWwPDezPWQj64wPFTKnWrgxzskngUA","code_challenge_method":"S256","prompt":"none","response_mode":"query"},"$type":"AuthorizeRequestValidationLog"}
+2019-10-04 13:36:30.682 +08:00 [DBG] IsActive called from: AuthorizeEndpoint
+2019-10-04 13:36:30.693 +08:00 [DBG] Consent found in consent store is same as current request, consent is not required
+2019-10-04 13:36:30.695 +08:00 [DBG] Creating Authorization Code Flow response.
+2019-10-04 13:36:30.709 +08:00 [INF] Authorize endpoint response
+{"SubjectId":"1","ClientId":"js","RedirectUri":"http://localhost:8080/silent-renew-oidc.html","State":"0325142d39004a66ab861d4a89751907","Scope":"openid profile vue.api","Error":null,"ErrorDescription":null,"$type":"AuthorizeResponseLog"}
+2019-10-04 13:36:30.820 +08:00 [DBG] CORS request made for path: /connect/token from origin: http://localhost:8080
+2019-10-04 13:36:30.831 +08:00 [DBG] Client list checked and origin: http://localhost:8080 is allowed
+2019-10-04 13:36:30.836 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-10-04 13:36:30.839 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2019-10-04 13:36:30.851 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-10-04 13:36:30.853 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-10-04 13:36:30.868 +08:00 [DBG] Start token request.
+2019-10-04 13:36:30.879 +08:00 [DBG] Start client validation
+2019-10-04 13:36:30.886 +08:00 [DBG] Start parsing Basic Authentication secret
+2019-10-04 13:36:30.905 +08:00 [DBG] Start parsing for secret in post body
+2019-10-04 13:36:30.905 +08:00 [DBG] client id without secret found
+2019-10-04 13:36:30.907 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2019-10-04 13:36:30.908 +08:00 [DBG] Secret id found: js
+2019-10-04 13:36:30.909 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:36:30.915 +08:00 [DBG] Public Client - skipping secret validation success
+2019-10-04 13:36:30.917 +08:00 [DBG] Client validation success
+2019-10-04 13:36:30.925 +08:00 [DBG] Start token request validation
+2019-10-04 13:36:30.939 +08:00 [DBG] Start validation of authorization code token request
+2019-10-04 13:36:30.960 +08:00 [DBG] Client required a proof key for code exchange. Starting PKCE validation
+2019-10-04 13:36:30.967 +08:00 [DBG] IsActive called from: AuthorizationCodeValidation
+2019-10-04 13:36:30.968 +08:00 [DBG] Validation of authorization code token request success
+2019-10-04 13:36:30.972 +08:00 [INF] Token request validation success
+{"ClientId":"js","ClientName":"JavaScript Client","GrantType":"authorization_code","Scopes":null,"AuthorizationCode":"fdb403711dc591c1b8b651ee03494e9ea5b0b702ad8011c6c36808ea92b1e360","RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"client_id":"js","code":"fdb403711dc591c1b8b651ee03494e9ea5b0b702ad8011c6c36808ea92b1e360","redirect_uri":"http://localhost:8080/silent-renew-oidc.html","code_verifier":"7f96d46282f149779acd8f8ad99e3e0bb7e1a4216eef417a94b15d647183de6b748c5b80391b4118bda36f5eb34a54bb","grant_type":"authorization_code"},"$type":"TokenRequestValidationLog"}
+2019-10-04 13:36:31.001 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:36:31.020 +08:00 [DBG] Getting claims for access token for client: js
+2019-10-04 13:36:31.021 +08:00 [DBG] Getting claims for access token for subject: 1
+2019-10-04 13:36:31.033 +08:00 [DBG] Get profile called for subject 1 from client JavaScript Client with claim types [] via ClaimsProviderAccessToken
+2019-10-04 13:36:31.041 +08:00 [DBG] Issued claims: []
+2019-10-04 13:36:31.163 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:36:31.176 +08:00 [DBG] Getting claims for identity token for subject: 1 and client: js
+2019-10-04 13:36:31.181 +08:00 [DBG] Get profile called for subject 1 from client JavaScript Client with claim types ["name","family_name","given_name","middle_name","nickname","preferred_username","profile","picture","website","gender","birthdate","zoneinfo","locale","updated_at"] via ClaimsProviderIdentityToken
+2019-10-04 13:36:31.190 +08:00 [DBG] Issued claims: ["name","website"]
+2019-10-04 13:36:31.200 +08:00 [DBG] Token request success.
+2019-10-04 13:36:31.216 +08:00 [DBG] CORS request made for path: /connect/userinfo from origin: http://localhost:8080
+2019-10-04 13:36:31.222 +08:00 [DBG] Client list checked and origin: http://localhost:8080 is allowed
+2019-10-04 13:36:31.225 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-10-04 13:36:31.235 +08:00 [DBG] CORS request made for path: /connect/userinfo from origin: http://localhost:8080
+2019-10-04 13:36:31.238 +08:00 [DBG] Client list checked and origin: http://localhost:8080 is allowed
+2019-10-04 13:36:31.252 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-10-04 13:36:31.254 +08:00 [DBG] Request path /connect/userinfo matched to endpoint type Userinfo
+2019-10-04 13:36:31.258 +08:00 [DBG] Endpoint enabled: Userinfo, successfully created handler: IdentityServer4.Endpoints.UserInfoEndpoint
+2019-10-04 13:36:31.262 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.UserInfoEndpoint for /connect/userinfo
+2019-10-04 13:36:31.282 +08:00 [DBG] Start userinfo request
+2019-10-04 13:36:31.286 +08:00 [DBG] Bearer token found in header
+2019-10-04 13:36:31.367 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:36:31.377 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:36:31.384 +08:00 [DBG] IsActive called from: AccessTokenValidation
+2019-10-04 13:36:31.385 +08:00 [DBG] Calling into custom token validator: IdentityServer4.Validation.DefaultCustomTokenValidator
+2019-10-04 13:36:31.390 +08:00 [DBG] Token validation success
+{"ClientId":null,"ClientName":null,"ValidateLifetime":true,"AccessTokenType":"Jwt","ExpectedScope":"openid","TokenHandle":null,"JwtId":null,"Claims":{"nbf":1570167391,"exp":1570170991,"iss":"http://localhost:5000","aud":["http://localhost:5000/resources","vue.api"],"client_id":"js","sub":"1","auth_time":1570167388,"idp":"local","scope":["openid","profile","vue.api"],"amr":"pwd"},"$type":"TokenValidationLog"}
+2019-10-04 13:36:31.400 +08:00 [DBG] IsActive called from: UserInfoRequestValidation
+2019-10-04 13:36:31.415 +08:00 [DBG] Creating userinfo response
+2019-10-04 13:36:31.422 +08:00 [DBG] Scopes in access token: openid profile vue.api
+2019-10-04 13:36:31.431 +08:00 [DBG] Scopes in access token: openid profile vue.api
+2019-10-04 13:36:31.438 +08:00 [DBG] Requested claim types: sub name family_name given_name middle_name nickname preferred_username profile picture website gender birthdate zoneinfo locale updated_at
+2019-10-04 13:36:31.442 +08:00 [DBG] Scopes in access token: openid profile vue.api
+2019-10-04 13:36:31.446 +08:00 [DBG] Get profile called for subject 1 from client JavaScript Client with claim types ["sub","name","family_name","given_name","middle_name","nickname","preferred_username","profile","picture","website","gender","birthdate","zoneinfo","locale","updated_at"] via UserInfoEndpoint
+2019-10-04 13:36:31.455 +08:00 [DBG] Issued claims: ["name","website"]
+2019-10-04 13:36:31.464 +08:00 [INF] Profile service returned the following claim types: name website
+2019-10-04 13:36:31.470 +08:00 [DBG] End userinfo request
+2019-10-04 13:36:31.492 +08:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2019-10-04 13:36:31.507 +08:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2019-10-04 13:36:31.517 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2019-10-04 13:36:31.525 +08:00 [DBG] Rendering check session result
+2019-10-04 13:36:32.732 +08:00 [DBG] Request path /connect/endsession matched to endpoint type Endsession
+2019-10-04 13:36:32.743 +08:00 [DBG] Endpoint enabled: Endsession, successfully created handler: IdentityServer4.Endpoints.EndSessionEndpoint
+2019-10-04 13:36:32.752 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.EndSessionEndpoint for /connect/endsession
+2019-10-04 13:36:32.774 +08:00 [DBG] Processing signout request for 1
+2019-10-04 13:36:32.789 +08:00 [DBG] Start end session request validation
+2019-10-04 13:36:32.804 +08:00 [DBG] Start identity token validation
+2019-10-04 13:36:32.815 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:36:32.816 +08:00 [DBG] Client found: js / JavaScript Client
+2019-10-04 13:36:32.830 +08:00 [DBG] IsActive called from: IdentityTokenValidation
+2019-10-04 13:36:32.831 +08:00 [DBG] Calling into custom token validator: IdentityServer4.Validation.DefaultCustomTokenValidator
+2019-10-04 13:36:32.836 +08:00 [DBG] Token validation success
+{"ClientId":"js","ClientName":"JavaScript Client","ValidateLifetime":false,"AccessTokenType":null,"ExpectedScope":null,"TokenHandle":null,"JwtId":null,"Claims":{"nbf":1570167391,"exp":1570167691,"iss":"http://localhost:5000","aud":"js","iat":1570167391,"at_hash":"32RckCFTRinbwBLIJZ_pLg","sid":"f9ca5370619cf16fb6d48f2858b6fc98","sub":"1","auth_time":1570167388,"idp":"local","name":"Alice","website":"https://alice.com","amr":"pwd"},"$type":"TokenValidationLog"}
+2019-10-04 13:36:32.852 +08:00 [INF] End session request validation success
+{"ClientId":"js","ClientName":"JavaScript Client","SubjectId":"1","PostLogOutUri":"http://localhost:8080/index.html","State":null,"Raw":{"id_token_hint":"eyJhbGciOiJSUzI1NiIsImtpZCI6Ijc0YjBjYTdjOTNhMTcxNTFiYmVmNGZmMWEyY2I0NjIyIiwidHlwIjoiSldUIn0.eyJuYmYiOjE1NzAxNjczOTEsImV4cCI6MTU3MDE2NzY5MSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1MDAwIiwiYXVkIjoianMiLCJpYXQiOjE1NzAxNjczOTEsImF0X2hhc2giOiIzMlJja0NGVFJpbmJ3QkxJSlpfcExnIiwic2lkIjoiZjljYTUzNzA2MTljZjE2ZmI2ZDQ4ZjI4NThiNmZjOTgiLCJzdWIiOiIxIiwiYXV0aF90aW1lIjoxNTcwMTY3Mzg4LCJpZHAiOiJsb2NhbCIsIm5hbWUiOiJBbGljZSIsIndlYnNpdGUiOiJodHRwczovL2FsaWNlLmNvbSIsImFtciI6WyJwd2QiXX0.dQsu9gzYaKjq6MjhYZVJWjfprROlQvZBVrM1jVCFk7qTkh3aVxAsVxU57XSLC-dEta9oKg-d3VPg_boyVRfwDfLBsDSBSXmXxyg8pxCSRdvDp2687_oEz3J1g1GX62gMGTZrxFSfRVRKBRXyPq_fwSGZkyaik1j1JUo5MUFqBjRBs3GXC2UEWeAzNpThPQqO3rLPBXVyUDHQpxZIAXrsnxYukYFXLbROi76U2keJdbXH0XJRuawRrepPrJYV8e13QaAeYcBiqUsHwjR50fp76210G2OgpiwX6S8yXENTPAQBc-aAj-5P3JP9SHDF7ql-F7wPUklw52F-2W18n6QRNg"},"$type":"EndSessionRequestValidationLog"}
+2019-10-04 13:36:32.870 +08:00 [DBG] Success validating end session request from js
+2019-10-04 13:36:32.958 +08:00 [INF] AuthenticationScheme: idsrv signed out.
+2019-10-04 13:36:33.056 +08:00 [DBG] Request path /connect/endsession/callback matched to endpoint type Endsession
+2019-10-04 13:36:33.066 +08:00 [DBG] Endpoint enabled: Endsession, successfully created handler: IdentityServer4.Endpoints.EndSessionCallbackEndpoint
+2019-10-04 13:36:33.075 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.EndSessionCallbackEndpoint for /connect/endsession/callback
+2019-10-04 13:36:33.102 +08:00 [DBG] Processing signout callback request
+2019-10-04 13:36:33.122 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:36:33.125 +08:00 [DBG] No client front-channel logout URLs
+2019-10-04 13:36:33.130 +08:00 [DBG] No client back-channel logout URLs
+2019-10-04 13:36:33.131 +08:00 [INF] Successful signout callback.
+2019-10-04 13:36:33.133 +08:00 [DBG] No client front-channel iframe urls
+2019-10-04 13:36:33.137 +08:00 [DBG] No client back-channel iframe urls
+2019-10-04 13:36:37.344 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:8080
+2019-10-04 13:36:37.350 +08:00 [DBG] Client list checked and origin: http://localhost:8080 is allowed
+2019-10-04 13:36:37.352 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-10-04 13:36:37.359 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-10-04 13:36:37.364 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-10-04 13:36:37.383 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-10-04 13:36:37.411 +08:00 [DBG] Start discovery request
+2019-10-04 13:36:37.434 +08:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2019-10-04 13:36:37.442 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2019-10-04 13:36:37.446 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2019-10-04 13:36:37.453 +08:00 [DBG] Start authorize request
+2019-10-04 13:36:37.461 +08:00 [DBG] No user present in authorize request
+2019-10-04 13:36:37.464 +08:00 [DBG] Start authorize request protocol validation
+2019-10-04 13:36:37.468 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:36:37.478 +08:00 [DBG] Checking for PKCE parameters
+2019-10-04 13:36:37.480 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-10-04 13:36:37.484 +08:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"js","ClientName":"JavaScript Client","RedirectUri":"http://localhost:8080/silent-renew-oidc.html","AllowedRedirectUris":["http://localhost:8080/oidc-callback","http://localhost:8080/silent-renew-oidc.html","http://47.112.212.161:9100/oidc-callback","http://47.112.212.161:9100/silent-renew-oidc.html"],"SubjectId":"anonymous","ResponseType":"code","ResponseMode":"query","GrantType":"authorization_code","RequestedScopes":"openid profile vue.api","State":"6696545a25b541a2bf37923de8885fd0","UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":"none","MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"client_id":"js","redirect_uri":"http://localhost:8080/silent-renew-oidc.html","response_type":"code","scope":"openid profile vue.api","state":"6696545a25b541a2bf37923de8885fd0","code_challenge":"5WhTS-WoPj3yAZYPBlD4YXsLjpfpfCeQKx2Zzsy4oys","code_challenge_method":"S256","prompt":"none","response_mode":"query"},"$type":"AuthorizeRequestValidationLog"}
+2019-10-04 13:36:37.512 +08:00 [INF] Showing error: prompt=none was requested but user is not authenticated
+2019-10-04 13:36:37.515 +08:00 [INF] {"ClientId":"js","ClientName":"JavaScript Client","RedirectUri":"http://localhost:8080/silent-renew-oidc.html","AllowedRedirectUris":["http://localhost:8080/oidc-callback","http://localhost:8080/silent-renew-oidc.html","http://47.112.212.161:9100/oidc-callback","http://47.112.212.161:9100/silent-renew-oidc.html"],"SubjectId":"anonymous","ResponseType":"code","ResponseMode":"query","GrantType":"authorization_code","RequestedScopes":"openid profile vue.api","State":"6696545a25b541a2bf37923de8885fd0","UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":"none","MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"client_id":"js","redirect_uri":"http://localhost:8080/silent-renew-oidc.html","response_type":"code","scope":"openid profile vue.api","state":"6696545a25b541a2bf37923de8885fd0","code_challenge":"5WhTS-WoPj3yAZYPBlD4YXsLjpfpfCeQKx2Zzsy4oys","code_challenge_method":"S256","prompt":"none","response_mode":"query"},"$type":"AuthorizeRequestValidationLog"}
+2019-10-04 13:37:11.444 +08:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2019-10-04 13:37:11.450 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2019-10-04 13:37:11.455 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2019-10-04 13:37:11.463 +08:00 [DBG] Start authorize request
+2019-10-04 13:37:11.466 +08:00 [DBG] No user present in authorize request
+2019-10-04 13:37:11.467 +08:00 [DBG] Start authorize request protocol validation
+2019-10-04 13:37:11.469 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:37:11.480 +08:00 [DBG] Checking for PKCE parameters
+2019-10-04 13:37:11.481 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-10-04 13:37:11.483 +08:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"js","ClientName":"JavaScript Client","RedirectUri":"http://localhost:8080/oidc-callback","AllowedRedirectUris":["http://localhost:8080/oidc-callback","http://localhost:8080/silent-renew-oidc.html","http://47.112.212.161:9100/oidc-callback","http://47.112.212.161:9100/silent-renew-oidc.html"],"SubjectId":"anonymous","ResponseType":"code","ResponseMode":"query","GrantType":"authorization_code","RequestedScopes":"openid profile vue.api","State":"e22a6a197b404efba5e46d2e9558af3c","UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"client_id":"js","redirect_uri":"http://localhost:8080/oidc-callback","response_type":"code","scope":"openid profile vue.api","state":"e22a6a197b404efba5e46d2e9558af3c","code_challenge":"xp8YUd38Xk72HD-bsDVZMON8zM0YD40TCLwPLItQU8s","code_challenge_method":"S256","response_mode":"query"},"$type":"AuthorizeRequestValidationLog"}
+2019-10-04 13:37:11.511 +08:00 [INF] Showing login: User is not authenticated
+2019-10-04 13:37:11.552 +08:00 [DBG] Start authorize request protocol validation
+2019-10-04 13:37:11.553 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:37:11.559 +08:00 [DBG] Checking for PKCE parameters
+2019-10-04 13:37:11.560 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-10-04 13:37:11.562 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:37:12.683 +08:00 [DBG] CORS request made for path: /Account/Login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2019-10-04 13:37:12.694 +08:00 [DBG] Start authorize request protocol validation
+2019-10-04 13:37:12.694 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:37:12.697 +08:00 [DBG] Checking for PKCE parameters
+2019-10-04 13:37:12.702 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-10-04 13:37:12.709 +08:00 [DBG] Augmenting SignInContext
+2019-10-04 13:37:12.710 +08:00 [DBG] Adding idp claim with value: local
+2019-10-04 13:37:12.711 +08:00 [DBG] Adding amr claim with value: pwd
+2019-10-04 13:37:12.714 +08:00 [INF] AuthenticationScheme: idsrv signed in.
+2019-10-04 13:37:12.724 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:37:12.745 +08:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2019-10-04 13:37:12.747 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2019-10-04 13:37:12.757 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2019-10-04 13:37:12.764 +08:00 [DBG] Start authorize callback request
+2019-10-04 13:37:12.765 +08:00 [DBG] User in authorize request: 1
+2019-10-04 13:37:12.766 +08:00 [DBG] Start authorize request protocol validation
+2019-10-04 13:37:12.767 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:37:12.775 +08:00 [DBG] Checking for PKCE parameters
+2019-10-04 13:37:12.779 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-10-04 13:37:12.782 +08:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"js","ClientName":"JavaScript Client","RedirectUri":"http://localhost:8080/oidc-callback","AllowedRedirectUris":["http://localhost:8080/oidc-callback","http://localhost:8080/silent-renew-oidc.html","http://47.112.212.161:9100/oidc-callback","http://47.112.212.161:9100/silent-renew-oidc.html"],"SubjectId":"1","ResponseType":"code","ResponseMode":"query","GrantType":"authorization_code","RequestedScopes":"openid profile vue.api","State":"e22a6a197b404efba5e46d2e9558af3c","UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":"be534b86dc49fff4755f1107197ced9b","Raw":{"client_id":"js","redirect_uri":"http://localhost:8080/oidc-callback","response_type":"code","scope":"openid profile vue.api","state":"e22a6a197b404efba5e46d2e9558af3c","code_challenge":"xp8YUd38Xk72HD-bsDVZMON8zM0YD40TCLwPLItQU8s","code_challenge_method":"S256","response_mode":"query"},"$type":"AuthorizeRequestValidationLog"}
+2019-10-04 13:37:12.799 +08:00 [DBG] IsActive called from: AuthorizeEndpoint
+2019-10-04 13:37:12.812 +08:00 [DBG] Consent found in consent store is same as current request, consent is not required
+2019-10-04 13:37:12.814 +08:00 [DBG] Creating Authorization Code Flow response.
+2019-10-04 13:37:12.828 +08:00 [INF] Authorize endpoint response
+{"SubjectId":"1","ClientId":"js","RedirectUri":"http://localhost:8080/oidc-callback","State":"e22a6a197b404efba5e46d2e9558af3c","Scope":"openid profile vue.api","Error":null,"ErrorDescription":null,"$type":"AuthorizeResponseLog"}
+2019-10-04 13:37:12.831 +08:00 [DBG] Augmenting SignInContext
+2019-10-04 13:37:12.838 +08:00 [INF] AuthenticationScheme: idsrv signed in.
+2019-10-04 13:37:13.354 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:8080
+2019-10-04 13:37:13.359 +08:00 [DBG] Client list checked and origin: http://localhost:8080 is allowed
+2019-10-04 13:37:13.362 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-10-04 13:37:13.364 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-10-04 13:37:13.374 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-10-04 13:37:13.378 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-10-04 13:37:13.383 +08:00 [DBG] Start discovery request
+2019-10-04 13:37:13.428 +08:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2019-10-04 13:37:13.445 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2019-10-04 13:37:13.450 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2019-10-04 13:37:13.462 +08:00 [DBG] Start authorize request
+2019-10-04 13:37:13.465 +08:00 [DBG] User in authorize request: 1
+2019-10-04 13:37:13.475 +08:00 [DBG] Start authorize request protocol validation
+2019-10-04 13:37:13.478 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:37:13.481 +08:00 [DBG] Checking for PKCE parameters
+2019-10-04 13:37:13.483 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-10-04 13:37:13.493 +08:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"js","ClientName":"JavaScript Client","RedirectUri":"http://localhost:8080/silent-renew-oidc.html","AllowedRedirectUris":["http://localhost:8080/oidc-callback","http://localhost:8080/silent-renew-oidc.html","http://47.112.212.161:9100/oidc-callback","http://47.112.212.161:9100/silent-renew-oidc.html"],"SubjectId":"1","ResponseType":"code","ResponseMode":"query","GrantType":"authorization_code","RequestedScopes":"openid profile vue.api","State":"4461aed16a0a4be28764aed0de11e356","UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":"none","MaxAge":null,"LoginHint":null,"SessionId":"be534b86dc49fff4755f1107197ced9b","Raw":{"client_id":"js","redirect_uri":"http://localhost:8080/silent-renew-oidc.html","response_type":"code","scope":"openid profile vue.api","state":"4461aed16a0a4be28764aed0de11e356","code_challenge":"pLpOZFqrIhnGJHRHonxz0koFIVCLIGaUswWSsw6MuaY","code_challenge_method":"S256","prompt":"none","response_mode":"query"},"$type":"AuthorizeRequestValidationLog"}
+2019-10-04 13:37:13.522 +08:00 [DBG] IsActive called from: AuthorizeEndpoint
+2019-10-04 13:37:13.535 +08:00 [DBG] Consent found in consent store is same as current request, consent is not required
+2019-10-04 13:37:13.538 +08:00 [DBG] Creating Authorization Code Flow response.
+2019-10-04 13:37:13.558 +08:00 [INF] Authorize endpoint response
+{"SubjectId":"1","ClientId":"js","RedirectUri":"http://localhost:8080/silent-renew-oidc.html","State":"4461aed16a0a4be28764aed0de11e356","Scope":"openid profile vue.api","Error":null,"ErrorDescription":null,"$type":"AuthorizeResponseLog"}
+2019-10-04 13:37:13.710 +08:00 [DBG] CORS request made for path: /connect/token from origin: http://localhost:8080
+2019-10-04 13:37:13.718 +08:00 [DBG] Client list checked and origin: http://localhost:8080 is allowed
+2019-10-04 13:37:13.720 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-10-04 13:37:13.722 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2019-10-04 13:37:13.727 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-10-04 13:37:13.729 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-10-04 13:37:13.737 +08:00 [DBG] Start token request.
+2019-10-04 13:37:13.741 +08:00 [DBG] Start client validation
+2019-10-04 13:37:13.743 +08:00 [DBG] Start parsing Basic Authentication secret
+2019-10-04 13:37:13.744 +08:00 [DBG] Start parsing for secret in post body
+2019-10-04 13:37:13.746 +08:00 [DBG] client id without secret found
+2019-10-04 13:37:13.764 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2019-10-04 13:37:13.770 +08:00 [DBG] Secret id found: js
+2019-10-04 13:37:13.771 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:37:13.774 +08:00 [DBG] Public Client - skipping secret validation success
+2019-10-04 13:37:13.776 +08:00 [DBG] Client validation success
+2019-10-04 13:37:13.777 +08:00 [DBG] Start token request validation
+2019-10-04 13:37:13.780 +08:00 [DBG] Start validation of authorization code token request
+2019-10-04 13:37:13.796 +08:00 [DBG] Client required a proof key for code exchange. Starting PKCE validation
+2019-10-04 13:37:13.797 +08:00 [DBG] IsActive called from: AuthorizationCodeValidation
+2019-10-04 13:37:13.799 +08:00 [DBG] Validation of authorization code token request success
+2019-10-04 13:37:13.800 +08:00 [INF] Token request validation success
+{"ClientId":"js","ClientName":"JavaScript Client","GrantType":"authorization_code","Scopes":null,"AuthorizationCode":"7684a18b9c720a1791fb14cbdb92daf2f0ae2a2b1c5a32c2c5c3e5041af8d09a","RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"client_id":"js","code":"7684a18b9c720a1791fb14cbdb92daf2f0ae2a2b1c5a32c2c5c3e5041af8d09a","redirect_uri":"http://localhost:8080/silent-renew-oidc.html","code_verifier":"bfef0ef7583d4e6582f828841f302eacb53d5d1f092e459f9b53ab38d98453737746f14ff2f94da38bfb31bf0cc644ab","grant_type":"authorization_code"},"$type":"TokenRequestValidationLog"}
+2019-10-04 13:37:13.812 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:37:13.816 +08:00 [DBG] Getting claims for access token for client: js
+2019-10-04 13:37:13.820 +08:00 [DBG] Getting claims for access token for subject: 1
+2019-10-04 13:37:13.821 +08:00 [DBG] Get profile called for subject 1 from client JavaScript Client with claim types [] via ClaimsProviderAccessToken
+2019-10-04 13:37:13.823 +08:00 [DBG] Issued claims: []
+2019-10-04 13:37:13.828 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:37:13.830 +08:00 [DBG] Getting claims for identity token for subject: 1 and client: js
+2019-10-04 13:37:13.832 +08:00 [DBG] Get profile called for subject 1 from client JavaScript Client with claim types ["name","family_name","given_name","middle_name","nickname","preferred_username","profile","picture","website","gender","birthdate","zoneinfo","locale","updated_at"] via ClaimsProviderIdentityToken
+2019-10-04 13:37:13.837 +08:00 [DBG] Issued claims: ["name","website"]
+2019-10-04 13:37:13.847 +08:00 [DBG] Token request success.
+2019-10-04 13:37:13.858 +08:00 [DBG] CORS request made for path: /connect/userinfo from origin: http://localhost:8080
+2019-10-04 13:37:13.860 +08:00 [DBG] Client list checked and origin: http://localhost:8080 is allowed
+2019-10-04 13:37:13.862 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-10-04 13:37:13.869 +08:00 [DBG] CORS request made for path: /connect/userinfo from origin: http://localhost:8080
+2019-10-04 13:37:13.871 +08:00 [DBG] Client list checked and origin: http://localhost:8080 is allowed
+2019-10-04 13:37:13.874 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-10-04 13:37:13.875 +08:00 [DBG] Request path /connect/userinfo matched to endpoint type Userinfo
+2019-10-04 13:37:13.880 +08:00 [DBG] Endpoint enabled: Userinfo, successfully created handler: IdentityServer4.Endpoints.UserInfoEndpoint
+2019-10-04 13:37:13.888 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.UserInfoEndpoint for /connect/userinfo
+2019-10-04 13:37:13.893 +08:00 [DBG] Start userinfo request
+2019-10-04 13:37:13.894 +08:00 [DBG] Bearer token found in header
+2019-10-04 13:37:13.899 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:37:13.903 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:37:13.905 +08:00 [DBG] IsActive called from: AccessTokenValidation
+2019-10-04 13:37:13.906 +08:00 [DBG] Calling into custom token validator: IdentityServer4.Validation.DefaultCustomTokenValidator
+2019-10-04 13:37:13.907 +08:00 [DBG] Token validation success
+{"ClientId":null,"ClientName":null,"ValidateLifetime":true,"AccessTokenType":"Jwt","ExpectedScope":"openid","TokenHandle":null,"JwtId":null,"Claims":{"nbf":1570167433,"exp":1570171033,"iss":"http://localhost:5000","aud":["http://localhost:5000/resources","vue.api"],"client_id":"js","sub":"1","auth_time":1570167432,"idp":"local","scope":["openid","profile","vue.api"],"amr":"pwd"},"$type":"TokenValidationLog"}
+2019-10-04 13:37:13.918 +08:00 [DBG] IsActive called from: UserInfoRequestValidation
+2019-10-04 13:37:13.919 +08:00 [DBG] Creating userinfo response
+2019-10-04 13:37:13.921 +08:00 [DBG] Scopes in access token: openid profile vue.api
+2019-10-04 13:37:13.926 +08:00 [DBG] Scopes in access token: openid profile vue.api
+2019-10-04 13:37:13.929 +08:00 [DBG] Requested claim types: sub name family_name given_name middle_name nickname preferred_username profile picture website gender birthdate zoneinfo locale updated_at
+2019-10-04 13:37:13.932 +08:00 [DBG] Scopes in access token: openid profile vue.api
+2019-10-04 13:37:13.938 +08:00 [DBG] Get profile called for subject 1 from client JavaScript Client with claim types ["sub","name","family_name","given_name","middle_name","nickname","preferred_username","profile","picture","website","gender","birthdate","zoneinfo","locale","updated_at"] via UserInfoEndpoint
+2019-10-04 13:37:13.946 +08:00 [DBG] Issued claims: ["name","website"]
+2019-10-04 13:37:13.954 +08:00 [INF] Profile service returned the following claim types: name website
+2019-10-04 13:37:13.957 +08:00 [DBG] End userinfo request
+2019-10-04 13:37:13.970 +08:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2019-10-04 13:37:13.972 +08:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2019-10-04 13:37:13.977 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2019-10-04 13:37:13.980 +08:00 [DBG] Rendering check session result
+2019-10-04 13:37:14.730 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:8080
+2019-10-04 13:37:14.738 +08:00 [DBG] Client list checked and origin: http://localhost:8080 is allowed
+2019-10-04 13:37:14.740 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-10-04 13:37:14.742 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-10-04 13:37:14.750 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-10-04 13:37:14.758 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-10-04 13:37:14.763 +08:00 [DBG] Start discovery request
+2019-10-04 13:37:14.832 +08:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2019-10-04 13:37:14.858 +08:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2019-10-04 13:37:14.874 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2019-10-04 13:37:14.877 +08:00 [DBG] Rendering check session result
+2019-10-04 13:37:18.344 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:8080
+2019-10-04 13:37:18.372 +08:00 [DBG] Client list checked and origin: http://localhost:8080 is allowed
+2019-10-04 13:37:18.385 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-10-04 13:37:18.391 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-10-04 13:37:18.402 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-10-04 13:37:18.406 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-10-04 13:37:18.408 +08:00 [DBG] Start discovery request
+2019-10-04 13:37:18.472 +08:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2019-10-04 13:37:18.507 +08:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2019-10-04 13:37:18.522 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2019-10-04 13:37:18.536 +08:00 [DBG] Rendering check session result
+2019-10-04 13:37:19.379 +08:00 [DBG] Request path /connect/endsession matched to endpoint type Endsession
+2019-10-04 13:37:19.388 +08:00 [DBG] Endpoint enabled: Endsession, successfully created handler: IdentityServer4.Endpoints.EndSessionEndpoint
+2019-10-04 13:37:19.393 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.EndSessionEndpoint for /connect/endsession
+2019-10-04 13:37:19.405 +08:00 [DBG] Processing signout request for 1
+2019-10-04 13:37:19.408 +08:00 [DBG] Start end session request validation
+2019-10-04 13:37:19.412 +08:00 [DBG] Start identity token validation
+2019-10-04 13:37:19.415 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:37:19.422 +08:00 [DBG] Client found: js / JavaScript Client
+2019-10-04 13:37:19.428 +08:00 [DBG] IsActive called from: IdentityTokenValidation
+2019-10-04 13:37:19.431 +08:00 [DBG] Calling into custom token validator: IdentityServer4.Validation.DefaultCustomTokenValidator
+2019-10-04 13:37:19.437 +08:00 [DBG] Token validation success
+{"ClientId":"js","ClientName":"JavaScript Client","ValidateLifetime":false,"AccessTokenType":null,"ExpectedScope":null,"TokenHandle":null,"JwtId":null,"Claims":{"nbf":1570167433,"exp":1570167733,"iss":"http://localhost:5000","aud":"js","iat":1570167433,"at_hash":"1NYG2QE3pi25KqwXcgpT7A","sid":"be534b86dc49fff4755f1107197ced9b","sub":"1","auth_time":1570167432,"idp":"local","name":"Alice","website":"https://alice.com","amr":"pwd"},"$type":"TokenValidationLog"}
+2019-10-04 13:37:19.453 +08:00 [INF] End session request validation success
+{"ClientId":"js","ClientName":"JavaScript Client","SubjectId":"1","PostLogOutUri":"http://localhost:8080/index.html","State":null,"Raw":{"id_token_hint":"eyJhbGciOiJSUzI1NiIsImtpZCI6Ijc0YjBjYTdjOTNhMTcxNTFiYmVmNGZmMWEyY2I0NjIyIiwidHlwIjoiSldUIn0.eyJuYmYiOjE1NzAxNjc0MzMsImV4cCI6MTU3MDE2NzczMywiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1MDAwIiwiYXVkIjoianMiLCJpYXQiOjE1NzAxNjc0MzMsImF0X2hhc2giOiIxTllHMlFFM3BpMjVLcXdYY2dwVDdBIiwic2lkIjoiYmU1MzRiODZkYzQ5ZmZmNDc1NWYxMTA3MTk3Y2VkOWIiLCJzdWIiOiIxIiwiYXV0aF90aW1lIjoxNTcwMTY3NDMyLCJpZHAiOiJsb2NhbCIsIm5hbWUiOiJBbGljZSIsIndlYnNpdGUiOiJodHRwczovL2FsaWNlLmNvbSIsImFtciI6WyJwd2QiXX0.MPrseQg9tY1FUb6lOx7RL6gp2iKfsR2I7WmOwZGZX2u0_Sn_eymUBPtmMdr-Xw6S6Ua02AwDQckovdxQGfq9-0Ob7z1ELlBrhkNyqFZJtf1bwXo97s-zPeT0JEF-oH0bFKV996-We13CYAAL0X21yXk9wykk8Ja_eeGnG0DGAZLp9_j7hLeWZ-62-GlY43rWJycTvGvD8hOuuvEMDLH4mU4rMmOJo6LFVGn58w02R1_-XMBLy_e0QL8iCV6RB7Z_zCx5O3tXbAcY86AOrCY9BGOp0rKtX25JFaLII1vPLvQblEtEdwi9wdTfVnfe4GUCcbjWgwm1vX28z4ByTouh4w"},"$type":"EndSessionRequestValidationLog"}
+2019-10-04 13:37:19.472 +08:00 [DBG] Success validating end session request from js
+2019-10-04 13:37:19.484 +08:00 [INF] AuthenticationScheme: idsrv signed out.
+2019-10-04 13:37:19.634 +08:00 [DBG] Request path /connect/endsession/callback matched to endpoint type Endsession
+2019-10-04 13:37:19.642 +08:00 [DBG] Endpoint enabled: Endsession, successfully created handler: IdentityServer4.Endpoints.EndSessionCallbackEndpoint
+2019-10-04 13:37:19.649 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.EndSessionCallbackEndpoint for /connect/endsession/callback
+2019-10-04 13:37:19.655 +08:00 [DBG] Processing signout callback request
+2019-10-04 13:37:19.667 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:37:19.673 +08:00 [DBG] No client front-channel logout URLs
+2019-10-04 13:37:19.674 +08:00 [DBG] No client back-channel logout URLs
+2019-10-04 13:37:19.693 +08:00 [INF] Successful signout callback.
+2019-10-04 13:37:19.700 +08:00 [DBG] No client front-channel iframe urls
+2019-10-04 13:37:19.701 +08:00 [DBG] No client back-channel iframe urls
+2019-10-04 13:37:30.916 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:8080
+2019-10-04 13:37:30.941 +08:00 [DBG] Client list checked and origin: http://localhost:8080 is allowed
+2019-10-04 13:37:30.948 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-10-04 13:37:30.968 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-10-04 13:37:30.978 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-10-04 13:37:30.987 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-10-04 13:37:30.990 +08:00 [DBG] Start discovery request
+2019-10-04 13:37:31.007 +08:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2019-10-04 13:37:31.014 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2019-10-04 13:37:31.017 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2019-10-04 13:37:31.025 +08:00 [DBG] Start authorize request
+2019-10-04 13:37:31.026 +08:00 [DBG] No user present in authorize request
+2019-10-04 13:37:31.027 +08:00 [DBG] Start authorize request protocol validation
+2019-10-04 13:37:31.029 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:37:31.036 +08:00 [DBG] Checking for PKCE parameters
+2019-10-04 13:37:31.040 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-10-04 13:37:31.044 +08:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"js","ClientName":"JavaScript Client","RedirectUri":"http://localhost:8080/silent-renew-oidc.html","AllowedRedirectUris":["http://localhost:8080/oidc-callback","http://localhost:8080/silent-renew-oidc.html","http://47.112.212.161:9100/oidc-callback","http://47.112.212.161:9100/silent-renew-oidc.html"],"SubjectId":"anonymous","ResponseType":"code","ResponseMode":"query","GrantType":"authorization_code","RequestedScopes":"openid profile vue.api","State":"208891e83c274a84b9b4d12562144398","UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":"none","MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"client_id":"js","redirect_uri":"http://localhost:8080/silent-renew-oidc.html","response_type":"code","scope":"openid profile vue.api","state":"208891e83c274a84b9b4d12562144398","code_challenge":"rxWNUkjDZzzseM3Uz8tB-lw1gwR_S2pTPzav_6PnhaU","code_challenge_method":"S256","prompt":"none","response_mode":"query"},"$type":"AuthorizeRequestValidationLog"}
+2019-10-04 13:37:31.079 +08:00 [INF] Showing error: prompt=none was requested but user is not authenticated
+2019-10-04 13:37:31.088 +08:00 [INF] {"ClientId":"js","ClientName":"JavaScript Client","RedirectUri":"http://localhost:8080/silent-renew-oidc.html","AllowedRedirectUris":["http://localhost:8080/oidc-callback","http://localhost:8080/silent-renew-oidc.html","http://47.112.212.161:9100/oidc-callback","http://47.112.212.161:9100/silent-renew-oidc.html"],"SubjectId":"anonymous","ResponseType":"code","ResponseMode":"query","GrantType":"authorization_code","RequestedScopes":"openid profile vue.api","State":"208891e83c274a84b9b4d12562144398","UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":"none","MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"client_id":"js","redirect_uri":"http://localhost:8080/silent-renew-oidc.html","response_type":"code","scope":"openid profile vue.api","state":"208891e83c274a84b9b4d12562144398","code_challenge":"rxWNUkjDZzzseM3Uz8tB-lw1gwR_S2pTPzav_6PnhaU","code_challenge_method":"S256","prompt":"none","response_mode":"query"},"$type":"AuthorizeRequestValidationLog"}
+2019-10-04 13:37:31.853 +08:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2019-10-04 13:37:31.861 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2019-10-04 13:37:31.863 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2019-10-04 13:37:31.872 +08:00 [DBG] Start authorize request
+2019-10-04 13:37:31.874 +08:00 [DBG] No user present in authorize request
+2019-10-04 13:37:31.875 +08:00 [DBG] Start authorize request protocol validation
+2019-10-04 13:37:31.876 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:37:31.878 +08:00 [DBG] Checking for PKCE parameters
+2019-10-04 13:37:31.880 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-10-04 13:37:31.894 +08:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"js","ClientName":"JavaScript Client","RedirectUri":"http://localhost:8080/oidc-callback","AllowedRedirectUris":["http://localhost:8080/oidc-callback","http://localhost:8080/silent-renew-oidc.html","http://47.112.212.161:9100/oidc-callback","http://47.112.212.161:9100/silent-renew-oidc.html"],"SubjectId":"anonymous","ResponseType":"code","ResponseMode":"query","GrantType":"authorization_code","RequestedScopes":"openid profile vue.api","State":"b6ac0e3b940a487d81349ba041eff9c9","UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"client_id":"js","redirect_uri":"http://localhost:8080/oidc-callback","response_type":"code","scope":"openid profile vue.api","state":"b6ac0e3b940a487d81349ba041eff9c9","code_challenge":"b0Q5xARM8MvWxTRxp2dqKdSwvuab19RaSBPGS_GfsCs","code_challenge_method":"S256","response_mode":"query"},"$type":"AuthorizeRequestValidationLog"}
+2019-10-04 13:37:31.924 +08:00 [INF] Showing login: User is not authenticated
+2019-10-04 13:37:31.931 +08:00 [DBG] Start authorize request protocol validation
+2019-10-04 13:37:31.934 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:37:31.938 +08:00 [DBG] Checking for PKCE parameters
+2019-10-04 13:37:31.940 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-10-04 13:37:31.942 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:37:33.270 +08:00 [DBG] CORS request made for path: /Account/Login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2019-10-04 13:37:33.279 +08:00 [DBG] Start authorize request protocol validation
+2019-10-04 13:37:33.279 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:37:33.288 +08:00 [DBG] Checking for PKCE parameters
+2019-10-04 13:37:33.290 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-10-04 13:37:33.291 +08:00 [DBG] Augmenting SignInContext
+2019-10-04 13:37:33.292 +08:00 [DBG] Adding idp claim with value: local
+2019-10-04 13:37:33.293 +08:00 [DBG] Adding amr claim with value: pwd
+2019-10-04 13:37:33.303 +08:00 [INF] AuthenticationScheme: idsrv signed in.
+2019-10-04 13:37:33.308 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:37:33.325 +08:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2019-10-04 13:37:33.330 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2019-10-04 13:37:33.339 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2019-10-04 13:37:33.342 +08:00 [DBG] Start authorize callback request
+2019-10-04 13:37:33.343 +08:00 [DBG] User in authorize request: 1
+2019-10-04 13:37:33.344 +08:00 [DBG] Start authorize request protocol validation
+2019-10-04 13:37:33.350 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:37:33.354 +08:00 [DBG] Checking for PKCE parameters
+2019-10-04 13:37:33.359 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-10-04 13:37:33.361 +08:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"js","ClientName":"JavaScript Client","RedirectUri":"http://localhost:8080/oidc-callback","AllowedRedirectUris":["http://localhost:8080/oidc-callback","http://localhost:8080/silent-renew-oidc.html","http://47.112.212.161:9100/oidc-callback","http://47.112.212.161:9100/silent-renew-oidc.html"],"SubjectId":"1","ResponseType":"code","ResponseMode":"query","GrantType":"authorization_code","RequestedScopes":"openid profile vue.api","State":"b6ac0e3b940a487d81349ba041eff9c9","UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":"06f5cd732b01d982adf91b3059029dde","Raw":{"client_id":"js","redirect_uri":"http://localhost:8080/oidc-callback","response_type":"code","scope":"openid profile vue.api","state":"b6ac0e3b940a487d81349ba041eff9c9","code_challenge":"b0Q5xARM8MvWxTRxp2dqKdSwvuab19RaSBPGS_GfsCs","code_challenge_method":"S256","response_mode":"query"},"$type":"AuthorizeRequestValidationLog"}
+2019-10-04 13:37:33.394 +08:00 [DBG] IsActive called from: AuthorizeEndpoint
+2019-10-04 13:37:33.408 +08:00 [DBG] Consent found in consent store is same as current request, consent is not required
+2019-10-04 13:37:33.410 +08:00 [DBG] Creating Authorization Code Flow response.
+2019-10-04 13:37:33.424 +08:00 [INF] Authorize endpoint response
+{"SubjectId":"1","ClientId":"js","RedirectUri":"http://localhost:8080/oidc-callback","State":"b6ac0e3b940a487d81349ba041eff9c9","Scope":"openid profile vue.api","Error":null,"ErrorDescription":null,"$type":"AuthorizeResponseLog"}
+2019-10-04 13:37:33.432 +08:00 [DBG] Augmenting SignInContext
+2019-10-04 13:37:33.434 +08:00 [INF] AuthenticationScheme: idsrv signed in.
+2019-10-04 13:37:33.990 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:8080
+2019-10-04 13:37:34.006 +08:00 [DBG] Client list checked and origin: http://localhost:8080 is allowed
+2019-10-04 13:37:34.024 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-10-04 13:37:34.040 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-10-04 13:37:34.062 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-10-04 13:37:34.072 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-10-04 13:37:34.080 +08:00 [DBG] Start discovery request
+2019-10-04 13:37:34.108 +08:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2019-10-04 13:37:34.119 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2019-10-04 13:37:34.126 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2019-10-04 13:37:34.128 +08:00 [DBG] Start authorize request
+2019-10-04 13:37:34.130 +08:00 [DBG] User in authorize request: 1
+2019-10-04 13:37:34.131 +08:00 [DBG] Start authorize request protocol validation
+2019-10-04 13:37:34.138 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:37:34.141 +08:00 [DBG] Checking for PKCE parameters
+2019-10-04 13:37:34.142 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-10-04 13:37:34.150 +08:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"js","ClientName":"JavaScript Client","RedirectUri":"http://localhost:8080/silent-renew-oidc.html","AllowedRedirectUris":["http://localhost:8080/oidc-callback","http://localhost:8080/silent-renew-oidc.html","http://47.112.212.161:9100/oidc-callback","http://47.112.212.161:9100/silent-renew-oidc.html"],"SubjectId":"1","ResponseType":"code","ResponseMode":"query","GrantType":"authorization_code","RequestedScopes":"openid profile vue.api","State":"95db53c3a15a41eaaa2fbf7bddc09890","UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":"none","MaxAge":null,"LoginHint":null,"SessionId":"06f5cd732b01d982adf91b3059029dde","Raw":{"client_id":"js","redirect_uri":"http://localhost:8080/silent-renew-oidc.html","response_type":"code","scope":"openid profile vue.api","state":"95db53c3a15a41eaaa2fbf7bddc09890","code_challenge":"ExN0oEpQgfLp_Z5YgINxRKookAb0PtXeOPZ1G_PMaN0","code_challenge_method":"S256","prompt":"none","response_mode":"query"},"$type":"AuthorizeRequestValidationLog"}
+2019-10-04 13:37:34.173 +08:00 [DBG] IsActive called from: AuthorizeEndpoint
+2019-10-04 13:37:34.182 +08:00 [DBG] Consent found in consent store is same as current request, consent is not required
+2019-10-04 13:37:34.184 +08:00 [DBG] Creating Authorization Code Flow response.
+2019-10-04 13:37:34.200 +08:00 [INF] Authorize endpoint response
+{"SubjectId":"1","ClientId":"js","RedirectUri":"http://localhost:8080/silent-renew-oidc.html","State":"95db53c3a15a41eaaa2fbf7bddc09890","Scope":"openid profile vue.api","Error":null,"ErrorDescription":null,"$type":"AuthorizeResponseLog"}
+2019-10-04 13:37:34.603 +08:00 [DBG] CORS request made for path: /connect/token from origin: http://localhost:8080
+2019-10-04 13:37:34.609 +08:00 [DBG] Client list checked and origin: http://localhost:8080 is allowed
+2019-10-04 13:37:34.613 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-10-04 13:37:34.619 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2019-10-04 13:37:34.622 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-10-04 13:37:34.625 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-10-04 13:37:34.632 +08:00 [DBG] Start token request.
+2019-10-04 13:37:34.634 +08:00 [DBG] Start client validation
+2019-10-04 13:37:34.636 +08:00 [DBG] Start parsing Basic Authentication secret
+2019-10-04 13:37:34.638 +08:00 [DBG] Start parsing for secret in post body
+2019-10-04 13:37:34.641 +08:00 [DBG] client id without secret found
+2019-10-04 13:37:34.645 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2019-10-04 13:37:34.648 +08:00 [DBG] Secret id found: js
+2019-10-04 13:37:34.651 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:37:34.656 +08:00 [DBG] Public Client - skipping secret validation success
+2019-10-04 13:37:34.659 +08:00 [DBG] Client validation success
+2019-10-04 13:37:34.660 +08:00 [DBG] Start token request validation
+2019-10-04 13:37:34.662 +08:00 [DBG] Start validation of authorization code token request
+2019-10-04 13:37:34.684 +08:00 [DBG] Client required a proof key for code exchange. Starting PKCE validation
+2019-10-04 13:37:34.684 +08:00 [DBG] IsActive called from: AuthorizationCodeValidation
+2019-10-04 13:37:34.688 +08:00 [DBG] Validation of authorization code token request success
+2019-10-04 13:37:34.690 +08:00 [INF] Token request validation success
+{"ClientId":"js","ClientName":"JavaScript Client","GrantType":"authorization_code","Scopes":null,"AuthorizationCode":"1132732190af0da2e8bbd0c451592d4ec89ba47b8149d4f13fe54d053b5b584f","RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"client_id":"js","code":"1132732190af0da2e8bbd0c451592d4ec89ba47b8149d4f13fe54d053b5b584f","redirect_uri":"http://localhost:8080/silent-renew-oidc.html","code_verifier":"cb5a99d98dee4b6390c6a7b445a610ae883c511653c04f14b11de3cd1541d76523fbfdccd1134214877ebb046b36a7ef","grant_type":"authorization_code"},"$type":"TokenRequestValidationLog"}
+2019-10-04 13:37:34.703 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:37:34.706 +08:00 [DBG] Getting claims for access token for client: js
+2019-10-04 13:37:34.711 +08:00 [DBG] Getting claims for access token for subject: 1
+2019-10-04 13:37:34.715 +08:00 [DBG] Get profile called for subject 1 from client JavaScript Client with claim types [] via ClaimsProviderAccessToken
+2019-10-04 13:37:34.719 +08:00 [DBG] Issued claims: []
+2019-10-04 13:37:34.731 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:37:34.735 +08:00 [DBG] Getting claims for identity token for subject: 1 and client: js
+2019-10-04 13:37:34.740 +08:00 [DBG] Get profile called for subject 1 from client JavaScript Client with claim types ["name","family_name","given_name","middle_name","nickname","preferred_username","profile","picture","website","gender","birthdate","zoneinfo","locale","updated_at"] via ClaimsProviderIdentityToken
+2019-10-04 13:37:34.753 +08:00 [DBG] Issued claims: ["name","website"]
+2019-10-04 13:37:34.762 +08:00 [DBG] Token request success.
+2019-10-04 13:37:34.782 +08:00 [DBG] CORS request made for path: /connect/userinfo from origin: http://localhost:8080
+2019-10-04 13:37:34.788 +08:00 [DBG] Client list checked and origin: http://localhost:8080 is allowed
+2019-10-04 13:37:34.791 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-10-04 13:37:34.799 +08:00 [DBG] CORS request made for path: /connect/userinfo from origin: http://localhost:8080
+2019-10-04 13:37:34.801 +08:00 [DBG] Client list checked and origin: http://localhost:8080 is allowed
+2019-10-04 13:37:34.804 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-10-04 13:37:34.806 +08:00 [DBG] Request path /connect/userinfo matched to endpoint type Userinfo
+2019-10-04 13:37:34.808 +08:00 [DBG] Endpoint enabled: Userinfo, successfully created handler: IdentityServer4.Endpoints.UserInfoEndpoint
+2019-10-04 13:37:34.816 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.UserInfoEndpoint for /connect/userinfo
+2019-10-04 13:37:34.818 +08:00 [DBG] Start userinfo request
+2019-10-04 13:37:34.820 +08:00 [DBG] Bearer token found in header
+2019-10-04 13:37:34.825 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:37:34.831 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:37:34.833 +08:00 [DBG] IsActive called from: AccessTokenValidation
+2019-10-04 13:37:34.836 +08:00 [DBG] Calling into custom token validator: IdentityServer4.Validation.DefaultCustomTokenValidator
+2019-10-04 13:37:34.840 +08:00 [DBG] Token validation success
+{"ClientId":null,"ClientName":null,"ValidateLifetime":true,"AccessTokenType":"Jwt","ExpectedScope":"openid","TokenHandle":null,"JwtId":null,"Claims":{"nbf":1570167454,"exp":1570171054,"iss":"http://localhost:5000","aud":["http://localhost:5000/resources","vue.api"],"client_id":"js","sub":"1","auth_time":1570167453,"idp":"local","scope":["openid","profile","vue.api"],"amr":"pwd"},"$type":"TokenValidationLog"}
+2019-10-04 13:37:34.853 +08:00 [DBG] IsActive called from: UserInfoRequestValidation
+2019-10-04 13:37:34.854 +08:00 [DBG] Creating userinfo response
+2019-10-04 13:37:34.855 +08:00 [DBG] Scopes in access token: openid profile vue.api
+2019-10-04 13:37:34.856 +08:00 [DBG] Scopes in access token: openid profile vue.api
+2019-10-04 13:37:34.861 +08:00 [DBG] Requested claim types: sub name family_name given_name middle_name nickname preferred_username profile picture website gender birthdate zoneinfo locale updated_at
+2019-10-04 13:37:34.864 +08:00 [DBG] Scopes in access token: openid profile vue.api
+2019-10-04 13:37:34.867 +08:00 [DBG] Get profile called for subject 1 from client JavaScript Client with claim types ["sub","name","family_name","given_name","middle_name","nickname","preferred_username","profile","picture","website","gender","birthdate","zoneinfo","locale","updated_at"] via UserInfoEndpoint
+2019-10-04 13:37:34.875 +08:00 [DBG] Issued claims: ["name","website"]
+2019-10-04 13:37:34.878 +08:00 [INF] Profile service returned the following claim types: name website
+2019-10-04 13:37:34.885 +08:00 [DBG] End userinfo request
+2019-10-04 13:37:34.905 +08:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2019-10-04 13:37:34.911 +08:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2019-10-04 13:37:34.915 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2019-10-04 13:37:34.924 +08:00 [DBG] Rendering check session result
+2019-10-04 13:37:36.633 +08:00 [DBG] Request path /connect/endsession matched to endpoint type Endsession
+2019-10-04 13:37:36.641 +08:00 [DBG] Endpoint enabled: Endsession, successfully created handler: IdentityServer4.Endpoints.EndSessionEndpoint
+2019-10-04 13:37:36.644 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.EndSessionEndpoint for /connect/endsession
+2019-10-04 13:37:36.647 +08:00 [DBG] Processing signout request for 1
+2019-10-04 13:37:36.655 +08:00 [DBG] Start end session request validation
+2019-10-04 13:37:36.656 +08:00 [DBG] Start identity token validation
+2019-10-04 13:37:36.658 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:37:36.668 +08:00 [DBG] Client found: js / JavaScript Client
+2019-10-04 13:37:36.680 +08:00 [DBG] IsActive called from: IdentityTokenValidation
+2019-10-04 13:37:36.683 +08:00 [DBG] Calling into custom token validator: IdentityServer4.Validation.DefaultCustomTokenValidator
+2019-10-04 13:37:36.704 +08:00 [DBG] Token validation success
+{"ClientId":"js","ClientName":"JavaScript Client","ValidateLifetime":false,"AccessTokenType":null,"ExpectedScope":null,"TokenHandle":null,"JwtId":null,"Claims":{"nbf":1570167454,"exp":1570167754,"iss":"http://localhost:5000","aud":"js","iat":1570167454,"at_hash":"6To5RplUwNeHouBbOsP2Sg","sid":"06f5cd732b01d982adf91b3059029dde","sub":"1","auth_time":1570167453,"idp":"local","name":"Alice","website":"https://alice.com","amr":"pwd"},"$type":"TokenValidationLog"}
+2019-10-04 13:37:36.717 +08:00 [INF] End session request validation success
+{"ClientId":"js","ClientName":"JavaScript Client","SubjectId":"1","PostLogOutUri":"http://localhost:8080/index.html","State":null,"Raw":{"id_token_hint":"eyJhbGciOiJSUzI1NiIsImtpZCI6Ijc0YjBjYTdjOTNhMTcxNTFiYmVmNGZmMWEyY2I0NjIyIiwidHlwIjoiSldUIn0.eyJuYmYiOjE1NzAxNjc0NTQsImV4cCI6MTU3MDE2Nzc1NCwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1MDAwIiwiYXVkIjoianMiLCJpYXQiOjE1NzAxNjc0NTQsImF0X2hhc2giOiI2VG81UnBsVXdOZUhvdUJiT3NQMlNnIiwic2lkIjoiMDZmNWNkNzMyYjAxZDk4MmFkZjkxYjMwNTkwMjlkZGUiLCJzdWIiOiIxIiwiYXV0aF90aW1lIjoxNTcwMTY3NDUzLCJpZHAiOiJsb2NhbCIsIm5hbWUiOiJBbGljZSIsIndlYnNpdGUiOiJodHRwczovL2FsaWNlLmNvbSIsImFtciI6WyJwd2QiXX0.f0aR-pfXwEPIw-HA8M_OPJhKs6ApLskI3UUPl9xvyL6RHyZGnC7hUPVoAzAjM_bztwuivp-db-VGFzqXUg0CJKHZNBxM9B_TSQ63BNB_lO_UJ3HAfXFmut45K_7anqx_81AA1tGH_loZFhBjDo9vce5I1mQbmCDsVi8tROfycJBeuUdhx-fUW24QsPq-0f8XT48UE1xaDSB4uy9Vq2tLibBdCf8P_a0_cYWjgf0bEWRDydCdYXAOuVnUaauzpGGetPBRb8RPN7JItPglQpTxdefGW5EorrCRwCB1K0tyrgLT6-kHBi8AQpzh79yDY0sRyregx7n1gxHWuwjTHygOYA"},"$type":"EndSessionRequestValidationLog"}
+2019-10-04 13:37:36.732 +08:00 [DBG] Success validating end session request from js
+2019-10-04 13:37:36.738 +08:00 [INF] AuthenticationScheme: idsrv signed out.
+2019-10-04 13:37:36.804 +08:00 [DBG] Request path /connect/endsession/callback matched to endpoint type Endsession
+2019-10-04 13:37:36.815 +08:00 [DBG] Endpoint enabled: Endsession, successfully created handler: IdentityServer4.Endpoints.EndSessionCallbackEndpoint
+2019-10-04 13:37:36.866 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.EndSessionCallbackEndpoint for /connect/endsession/callback
+2019-10-04 13:37:36.886 +08:00 [DBG] Processing signout callback request
+2019-10-04 13:37:36.898 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:37:36.909 +08:00 [DBG] No client front-channel logout URLs
+2019-10-04 13:37:36.919 +08:00 [DBG] No client back-channel logout URLs
+2019-10-04 13:37:36.922 +08:00 [INF] Successful signout callback.
+2019-10-04 13:37:36.926 +08:00 [DBG] No client front-channel iframe urls
+2019-10-04 13:37:36.933 +08:00 [DBG] No client back-channel iframe urls
+2019-10-04 13:37:52.940 +08:00 [DBG] Request path /connect/endsession/callback matched to endpoint type Endsession
+2019-10-04 13:37:52.951 +08:00 [DBG] Endpoint enabled: Endsession, successfully created handler: IdentityServer4.Endpoints.EndSessionCallbackEndpoint
+2019-10-04 13:37:52.983 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.EndSessionCallbackEndpoint for /connect/endsession/callback
+2019-10-04 13:37:52.986 +08:00 [DBG] Processing signout callback request
+2019-10-04 13:37:52.991 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:37:52.999 +08:00 [DBG] No client front-channel logout URLs
+2019-10-04 13:37:53.004 +08:00 [DBG] No client back-channel logout URLs
+2019-10-04 13:37:53.006 +08:00 [INF] Successful signout callback.
+2019-10-04 13:37:53.009 +08:00 [DBG] No client front-channel iframe urls
+2019-10-04 13:37:53.020 +08:00 [DBG] No client back-channel iframe urls
+2019-10-04 13:38:10.740 +08:00 [DBG] Request path /connect/endsession/callback matched to endpoint type Endsession
+2019-10-04 13:38:10.761 +08:00 [DBG] Endpoint enabled: Endsession, successfully created handler: IdentityServer4.Endpoints.EndSessionCallbackEndpoint
+2019-10-04 13:38:10.789 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.EndSessionCallbackEndpoint for /connect/endsession/callback
+2019-10-04 13:38:10.803 +08:00 [DBG] Processing signout callback request
+2019-10-04 13:38:10.805 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:38:10.830 +08:00 [DBG] No client front-channel logout URLs
+2019-10-04 13:38:10.840 +08:00 [DBG] No client back-channel logout URLs
+2019-10-04 13:38:10.849 +08:00 [INF] Successful signout callback.
+2019-10-04 13:38:10.851 +08:00 [DBG] No client front-channel iframe urls
+2019-10-04 13:38:10.853 +08:00 [DBG] No client back-channel iframe urls
+2019-10-04 13:38:16.499 +08:00 [DBG] Request path /connect/endsession/callback matched to endpoint type Endsession
+2019-10-04 13:38:16.534 +08:00 [DBG] Endpoint enabled: Endsession, successfully created handler: IdentityServer4.Endpoints.EndSessionCallbackEndpoint
+2019-10-04 13:38:16.549 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.EndSessionCallbackEndpoint for /connect/endsession/callback
+2019-10-04 13:38:16.564 +08:00 [DBG] Processing signout callback request
+2019-10-04 13:38:16.567 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:38:16.581 +08:00 [DBG] No client front-channel logout URLs
+2019-10-04 13:38:16.582 +08:00 [DBG] No client back-channel logout URLs
+2019-10-04 13:38:16.583 +08:00 [INF] Successful signout callback.
+2019-10-04 13:38:16.592 +08:00 [DBG] No client front-channel iframe urls
+2019-10-04 13:38:16.594 +08:00 [DBG] No client back-channel iframe urls
+2019-10-04 13:38:18.067 +08:00 [DBG] Request path /connect/endsession/callback matched to endpoint type Endsession
+2019-10-04 13:38:18.083 +08:00 [DBG] Endpoint enabled: Endsession, successfully created handler: IdentityServer4.Endpoints.EndSessionCallbackEndpoint
+2019-10-04 13:38:18.097 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.EndSessionCallbackEndpoint for /connect/endsession/callback
+2019-10-04 13:38:18.108 +08:00 [DBG] Processing signout callback request
+2019-10-04 13:38:18.122 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:38:18.126 +08:00 [DBG] No client front-channel logout URLs
+2019-10-04 13:38:18.128 +08:00 [DBG] No client back-channel logout URLs
+2019-10-04 13:38:18.139 +08:00 [INF] Successful signout callback.
+2019-10-04 13:38:18.143 +08:00 [DBG] No client front-channel iframe urls
+2019-10-04 13:38:18.147 +08:00 [DBG] No client back-channel iframe urls
+2019-10-04 13:39:17.320 +08:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-10-04 13:39:17.391 +08:00 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-10-04 13:39:17.399 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-10-04 13:39:17.400 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-10-04 13:39:17.401 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-10-04 13:39:17.402 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-10-04 13:39:17.402 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-10-04 13:39:28.958 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:8080
+2019-10-04 13:39:28.974 +08:00 [DBG] Client list checked and origin: http://localhost:8080 is allowed
+2019-10-04 13:39:28.977 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-10-04 13:39:29.195 +08:00 [DBG] Login Url: /Account/Login
+2019-10-04 13:39:29.201 +08:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-10-04 13:39:29.203 +08:00 [DBG] Logout Url: /Account/Logout
+2019-10-04 13:39:29.204 +08:00 [DBG] ConsentUrl Url: /consent
+2019-10-04 13:39:29.207 +08:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-10-04 13:39:29.208 +08:00 [DBG] Error Url: /home/error
+2019-10-04 13:39:29.230 +08:00 [DBG] Error Id Parameter: errorId
+2019-10-04 13:39:29.284 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-10-04 13:39:29.293 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-10-04 13:39:29.294 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-10-04 13:39:29.306 +08:00 [DBG] Start discovery request
+2019-10-04 13:39:29.429 +08:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2019-10-04 13:39:29.448 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2019-10-04 13:39:29.452 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2019-10-04 13:39:29.464 +08:00 [DBG] Start authorize request
+2019-10-04 13:39:29.483 +08:00 [DBG] No user present in authorize request
+2019-10-04 13:39:29.492 +08:00 [DBG] Start authorize request protocol validation
+2019-10-04 13:39:29.524 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:39:29.537 +08:00 [DBG] Checking for PKCE parameters
+2019-10-04 13:39:29.592 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-10-04 13:39:29.620 +08:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"js","ClientName":"JavaScript Client","RedirectUri":"http://localhost:8080/silent-renew-oidc.html","AllowedRedirectUris":["http://localhost:8080/oidc-callback","http://localhost:8080/silent-renew-oidc.html","http://47.112.212.161:9100/oidc-callback","http://47.112.212.161:9100/silent-renew-oidc.html"],"SubjectId":"anonymous","ResponseType":"code","ResponseMode":"query","GrantType":"authorization_code","RequestedScopes":"openid profile vue.api","State":"86118605329648928cb877b789c64242","UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":"none","MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"client_id":"js","redirect_uri":"http://localhost:8080/silent-renew-oidc.html","response_type":"code","scope":"openid profile vue.api","state":"86118605329648928cb877b789c64242","code_challenge":"YCxs_acY5FwzyeEFNUDLtofaxTRDkefdtpiP8MS_fAs","code_challenge_method":"S256","prompt":"none","response_mode":"query"},"$type":"AuthorizeRequestValidationLog"}
+2019-10-04 13:39:29.660 +08:00 [INF] Showing error: prompt=none was requested but user is not authenticated
+2019-10-04 13:39:29.668 +08:00 [INF] {"ClientId":"js","ClientName":"JavaScript Client","RedirectUri":"http://localhost:8080/silent-renew-oidc.html","AllowedRedirectUris":["http://localhost:8080/oidc-callback","http://localhost:8080/silent-renew-oidc.html","http://47.112.212.161:9100/oidc-callback","http://47.112.212.161:9100/silent-renew-oidc.html"],"SubjectId":"anonymous","ResponseType":"code","ResponseMode":"query","GrantType":"authorization_code","RequestedScopes":"openid profile vue.api","State":"86118605329648928cb877b789c64242","UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":"none","MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"client_id":"js","redirect_uri":"http://localhost:8080/silent-renew-oidc.html","response_type":"code","scope":"openid profile vue.api","state":"86118605329648928cb877b789c64242","code_challenge":"YCxs_acY5FwzyeEFNUDLtofaxTRDkefdtpiP8MS_fAs","code_challenge_method":"S256","prompt":"none","response_mode":"query"},"$type":"AuthorizeRequestValidationLog"}
+2019-10-04 13:39:30.718 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:8080
+2019-10-04 13:39:30.735 +08:00 [DBG] Client list checked and origin: http://localhost:8080 is allowed
+2019-10-04 13:39:30.755 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-10-04 13:39:30.779 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-10-04 13:39:30.790 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-10-04 13:39:30.801 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-10-04 13:39:30.804 +08:00 [DBG] Start discovery request
+2019-10-04 13:39:30.836 +08:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2019-10-04 13:39:30.841 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2019-10-04 13:39:30.844 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2019-10-04 13:39:30.847 +08:00 [DBG] Start authorize request
+2019-10-04 13:39:30.849 +08:00 [DBG] No user present in authorize request
+2019-10-04 13:39:30.855 +08:00 [DBG] Start authorize request protocol validation
+2019-10-04 13:39:30.857 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:39:30.859 +08:00 [DBG] Checking for PKCE parameters
+2019-10-04 13:39:30.861 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-10-04 13:39:30.870 +08:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"js","ClientName":"JavaScript Client","RedirectUri":"http://localhost:8080/silent-renew-oidc.html","AllowedRedirectUris":["http://localhost:8080/oidc-callback","http://localhost:8080/silent-renew-oidc.html","http://47.112.212.161:9100/oidc-callback","http://47.112.212.161:9100/silent-renew-oidc.html"],"SubjectId":"anonymous","ResponseType":"code","ResponseMode":"query","GrantType":"authorization_code","RequestedScopes":"openid profile vue.api","State":"b55fa7e9fe01452e9ea49e9a9dfcd62d","UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":"none","MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"client_id":"js","redirect_uri":"http://localhost:8080/silent-renew-oidc.html","response_type":"code","scope":"openid profile vue.api","state":"b55fa7e9fe01452e9ea49e9a9dfcd62d","code_challenge":"dy--JOGMKfQeRBSI7Z7TZUeMnBcpFw_kcVx24UJ3dfE","code_challenge_method":"S256","prompt":"none","response_mode":"query"},"$type":"AuthorizeRequestValidationLog"}
+2019-10-04 13:39:30.898 +08:00 [INF] Showing error: prompt=none was requested but user is not authenticated
+2019-10-04 13:39:30.901 +08:00 [INF] {"ClientId":"js","ClientName":"JavaScript Client","RedirectUri":"http://localhost:8080/silent-renew-oidc.html","AllowedRedirectUris":["http://localhost:8080/oidc-callback","http://localhost:8080/silent-renew-oidc.html","http://47.112.212.161:9100/oidc-callback","http://47.112.212.161:9100/silent-renew-oidc.html"],"SubjectId":"anonymous","ResponseType":"code","ResponseMode":"query","GrantType":"authorization_code","RequestedScopes":"openid profile vue.api","State":"b55fa7e9fe01452e9ea49e9a9dfcd62d","UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":"none","MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"client_id":"js","redirect_uri":"http://localhost:8080/silent-renew-oidc.html","response_type":"code","scope":"openid profile vue.api","state":"b55fa7e9fe01452e9ea49e9a9dfcd62d","code_challenge":"dy--JOGMKfQeRBSI7Z7TZUeMnBcpFw_kcVx24UJ3dfE","code_challenge_method":"S256","prompt":"none","response_mode":"query"},"$type":"AuthorizeRequestValidationLog"}
+2019-10-04 13:39:37.485 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:8080
+2019-10-04 13:39:37.542 +08:00 [DBG] Client list checked and origin: http://localhost:8080 is allowed
+2019-10-04 13:39:37.568 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-10-04 13:39:37.577 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-10-04 13:39:37.586 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-10-04 13:39:37.593 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-10-04 13:39:37.598 +08:00 [DBG] Start discovery request
+2019-10-04 13:39:37.617 +08:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2019-10-04 13:39:37.627 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2019-10-04 13:39:37.633 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2019-10-04 13:39:37.636 +08:00 [DBG] Start authorize request
+2019-10-04 13:39:37.639 +08:00 [DBG] No user present in authorize request
+2019-10-04 13:39:37.643 +08:00 [DBG] Start authorize request protocol validation
+2019-10-04 13:39:37.645 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:39:37.649 +08:00 [DBG] Checking for PKCE parameters
+2019-10-04 13:39:37.651 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-10-04 13:39:37.659 +08:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"js","ClientName":"JavaScript Client","RedirectUri":"http://localhost:8080/silent-renew-oidc.html","AllowedRedirectUris":["http://localhost:8080/oidc-callback","http://localhost:8080/silent-renew-oidc.html","http://47.112.212.161:9100/oidc-callback","http://47.112.212.161:9100/silent-renew-oidc.html"],"SubjectId":"anonymous","ResponseType":"code","ResponseMode":"query","GrantType":"authorization_code","RequestedScopes":"openid profile vue.api","State":"448bac462d2144a1951d160cf37cf4fc","UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":"none","MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"client_id":"js","redirect_uri":"http://localhost:8080/silent-renew-oidc.html","response_type":"code","scope":"openid profile vue.api","state":"448bac462d2144a1951d160cf37cf4fc","code_challenge":"g8mF6nDFzMuDDaBOq4pTv1Szj_-lxY6m47p8YmsZP1w","code_challenge_method":"S256","prompt":"none","response_mode":"query"},"$type":"AuthorizeRequestValidationLog"}
+2019-10-04 13:39:37.692 +08:00 [INF] Showing error: prompt=none was requested but user is not authenticated
+2019-10-04 13:39:37.701 +08:00 [INF] {"ClientId":"js","ClientName":"JavaScript Client","RedirectUri":"http://localhost:8080/silent-renew-oidc.html","AllowedRedirectUris":["http://localhost:8080/oidc-callback","http://localhost:8080/silent-renew-oidc.html","http://47.112.212.161:9100/oidc-callback","http://47.112.212.161:9100/silent-renew-oidc.html"],"SubjectId":"anonymous","ResponseType":"code","ResponseMode":"query","GrantType":"authorization_code","RequestedScopes":"openid profile vue.api","State":"448bac462d2144a1951d160cf37cf4fc","UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":"none","MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"client_id":"js","redirect_uri":"http://localhost:8080/silent-renew-oidc.html","response_type":"code","scope":"openid profile vue.api","state":"448bac462d2144a1951d160cf37cf4fc","code_challenge":"g8mF6nDFzMuDDaBOq4pTv1Szj_-lxY6m47p8YmsZP1w","code_challenge_method":"S256","prompt":"none","response_mode":"query"},"$type":"AuthorizeRequestValidationLog"}
+2019-10-04 13:39:38.798 +08:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2019-10-04 13:39:38.808 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2019-10-04 13:39:38.813 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2019-10-04 13:39:38.815 +08:00 [DBG] Start authorize request
+2019-10-04 13:39:38.819 +08:00 [DBG] No user present in authorize request
+2019-10-04 13:39:38.826 +08:00 [DBG] Start authorize request protocol validation
+2019-10-04 13:39:38.827 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:39:38.830 +08:00 [DBG] Checking for PKCE parameters
+2019-10-04 13:39:38.831 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-10-04 13:39:38.833 +08:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"js","ClientName":"JavaScript Client","RedirectUri":"http://localhost:8080/oidc-callback","AllowedRedirectUris":["http://localhost:8080/oidc-callback","http://localhost:8080/silent-renew-oidc.html","http://47.112.212.161:9100/oidc-callback","http://47.112.212.161:9100/silent-renew-oidc.html"],"SubjectId":"anonymous","ResponseType":"code","ResponseMode":"query","GrantType":"authorization_code","RequestedScopes":"openid profile vue.api","State":"b7f48f0b9429415fbc34e3e258c04df2","UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"client_id":"js","redirect_uri":"http://localhost:8080/oidc-callback","response_type":"code","scope":"openid profile vue.api","state":"b7f48f0b9429415fbc34e3e258c04df2","code_challenge":"nG4zpEhU4MVAl60aq5e3QIGlK3DGiakiGRvHTC68vxo","code_challenge_method":"S256","response_mode":"query"},"$type":"AuthorizeRequestValidationLog"}
+2019-10-04 13:39:38.857 +08:00 [INF] Showing login: User is not authenticated
+2019-10-04 13:39:39.273 +08:00 [DBG] Start authorize request protocol validation
+2019-10-04 13:39:39.274 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:39:39.281 +08:00 [DBG] Checking for PKCE parameters
+2019-10-04 13:39:39.287 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-10-04 13:39:39.297 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:39:41.110 +08:00 [DBG] CORS request made for path: /Account/Login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2019-10-04 13:39:41.179 +08:00 [DBG] Start authorize request protocol validation
+2019-10-04 13:39:41.180 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:39:41.187 +08:00 [DBG] Checking for PKCE parameters
+2019-10-04 13:39:41.190 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-10-04 13:39:41.219 +08:00 [DBG] Augmenting SignInContext
+2019-10-04 13:39:41.226 +08:00 [DBG] Adding idp claim with value: local
+2019-10-04 13:39:41.227 +08:00 [DBG] Adding amr claim with value: pwd
+2019-10-04 13:39:41.248 +08:00 [INF] AuthenticationScheme: idsrv signed in.
+2019-10-04 13:39:41.255 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:39:41.274 +08:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2019-10-04 13:39:41.295 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2019-10-04 13:39:41.306 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2019-10-04 13:39:41.328 +08:00 [DBG] Start authorize callback request
+2019-10-04 13:39:41.347 +08:00 [DBG] User in authorize request: 1
+2019-10-04 13:39:41.347 +08:00 [DBG] Start authorize request protocol validation
+2019-10-04 13:39:41.351 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:39:41.356 +08:00 [DBG] Checking for PKCE parameters
+2019-10-04 13:39:41.358 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-10-04 13:39:41.360 +08:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"js","ClientName":"JavaScript Client","RedirectUri":"http://localhost:8080/oidc-callback","AllowedRedirectUris":["http://localhost:8080/oidc-callback","http://localhost:8080/silent-renew-oidc.html","http://47.112.212.161:9100/oidc-callback","http://47.112.212.161:9100/silent-renew-oidc.html"],"SubjectId":"1","ResponseType":"code","ResponseMode":"query","GrantType":"authorization_code","RequestedScopes":"openid profile vue.api","State":"b7f48f0b9429415fbc34e3e258c04df2","UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":"a99f9b26de57c47a1ee3687d2f1c86fd","Raw":{"client_id":"js","redirect_uri":"http://localhost:8080/oidc-callback","response_type":"code","scope":"openid profile vue.api","state":"b7f48f0b9429415fbc34e3e258c04df2","code_challenge":"nG4zpEhU4MVAl60aq5e3QIGlK3DGiakiGRvHTC68vxo","code_challenge_method":"S256","response_mode":"query"},"$type":"AuthorizeRequestValidationLog"}
+2019-10-04 13:39:41.386 +08:00 [DBG] IsActive called from: AuthorizeEndpoint
+2019-10-04 13:39:41.411 +08:00 [DBG] user_consent grant with value: js|1 not found in store.
+2019-10-04 13:39:41.415 +08:00 [DBG] Found no prior consent from consent store, consent is required
+2019-10-04 13:39:41.417 +08:00 [INF] Showing consent: User has not yet consented
+2019-10-04 13:39:41.448 +08:00 [DBG] Start authorize request protocol validation
+2019-10-04 13:39:41.448 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:39:41.453 +08:00 [DBG] Checking for PKCE parameters
+2019-10-04 13:39:41.454 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-10-04 13:39:41.456 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:39:42.680 +08:00 [DBG] CORS request made for path: /consent from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2019-10-04 13:39:42.721 +08:00 [DBG] Start authorize request protocol validation
+2019-10-04 13:39:42.722 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:39:42.726 +08:00 [DBG] Checking for PKCE parameters
+2019-10-04 13:39:42.727 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-10-04 13:39:42.752 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:39:42.763 +08:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2019-10-04 13:39:42.769 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2019-10-04 13:39:42.772 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2019-10-04 13:39:42.779 +08:00 [DBG] Start authorize callback request
+2019-10-04 13:39:42.791 +08:00 [DBG] User in authorize request: 1
+2019-10-04 13:39:42.792 +08:00 [DBG] Start authorize request protocol validation
+2019-10-04 13:39:42.794 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:39:42.800 +08:00 [DBG] Checking for PKCE parameters
+2019-10-04 13:39:42.802 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-10-04 13:39:42.805 +08:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"js","ClientName":"JavaScript Client","RedirectUri":"http://localhost:8080/oidc-callback","AllowedRedirectUris":["http://localhost:8080/oidc-callback","http://localhost:8080/silent-renew-oidc.html","http://47.112.212.161:9100/oidc-callback","http://47.112.212.161:9100/silent-renew-oidc.html"],"SubjectId":"1","ResponseType":"code","ResponseMode":"query","GrantType":"authorization_code","RequestedScopes":"openid profile vue.api","State":"b7f48f0b9429415fbc34e3e258c04df2","UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":"a99f9b26de57c47a1ee3687d2f1c86fd","Raw":{"client_id":"js","redirect_uri":"http://localhost:8080/oidc-callback","response_type":"code","scope":"openid profile vue.api","state":"b7f48f0b9429415fbc34e3e258c04df2","code_challenge":"nG4zpEhU4MVAl60aq5e3QIGlK3DGiakiGRvHTC68vxo","code_challenge_method":"S256","response_mode":"query"},"$type":"AuthorizeRequestValidationLog"}
+2019-10-04 13:39:42.846 +08:00 [DBG] IsActive called from: AuthorizeEndpoint
+2019-10-04 13:39:42.853 +08:00 [DBG] user_consent grant with value: js|1 not found in store.
+2019-10-04 13:39:42.856 +08:00 [DBG] Found no prior consent from consent store, consent is required
+2019-10-04 13:39:42.870 +08:00 [INF] User consented to scopes: ["openid","profile","vue.api"]
+2019-10-04 13:39:42.874 +08:00 [DBG] User indicated to remember consent for scopes: ["openid","profile","vue.api"]
+2019-10-04 13:39:42.882 +08:00 [DBG] Client allows remembering consent, and consent given. Updating consent store for subject: 1
+2019-10-04 13:39:42.909 +08:00 [DBG] Creating Authorization Code Flow response.
+2019-10-04 13:39:42.942 +08:00 [INF] Authorize endpoint response
+{"SubjectId":"1","ClientId":"js","RedirectUri":"http://localhost:8080/oidc-callback","State":"b7f48f0b9429415fbc34e3e258c04df2","Scope":"openid profile vue.api","Error":null,"ErrorDescription":null,"$type":"AuthorizeResponseLog"}
+2019-10-04 13:39:42.972 +08:00 [DBG] Augmenting SignInContext
+2019-10-04 13:39:42.973 +08:00 [INF] AuthenticationScheme: idsrv signed in.
+2019-10-04 13:39:43.809 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:8080
+2019-10-04 13:39:43.846 +08:00 [DBG] Client list checked and origin: http://localhost:8080 is allowed
+2019-10-04 13:39:43.859 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-10-04 13:39:43.871 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-10-04 13:39:43.879 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-10-04 13:39:43.892 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-10-04 13:39:43.901 +08:00 [DBG] Start discovery request
+2019-10-04 13:39:43.936 +08:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2019-10-04 13:39:43.944 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2019-10-04 13:39:43.949 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2019-10-04 13:39:43.956 +08:00 [DBG] Start authorize request
+2019-10-04 13:39:43.958 +08:00 [DBG] User in authorize request: 1
+2019-10-04 13:39:43.958 +08:00 [DBG] Start authorize request protocol validation
+2019-10-04 13:39:43.961 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:39:43.968 +08:00 [DBG] Checking for PKCE parameters
+2019-10-04 13:39:43.970 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-10-04 13:39:43.973 +08:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"js","ClientName":"JavaScript Client","RedirectUri":"http://localhost:8080/silent-renew-oidc.html","AllowedRedirectUris":["http://localhost:8080/oidc-callback","http://localhost:8080/silent-renew-oidc.html","http://47.112.212.161:9100/oidc-callback","http://47.112.212.161:9100/silent-renew-oidc.html"],"SubjectId":"1","ResponseType":"code","ResponseMode":"query","GrantType":"authorization_code","RequestedScopes":"openid profile vue.api","State":"58de44da5517439c8e682e594a314479","UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":"none","MaxAge":null,"LoginHint":null,"SessionId":"a99f9b26de57c47a1ee3687d2f1c86fd","Raw":{"client_id":"js","redirect_uri":"http://localhost:8080/silent-renew-oidc.html","response_type":"code","scope":"openid profile vue.api","state":"58de44da5517439c8e682e594a314479","code_challenge":"NFQEiwF8spo17s5dJF06jw0bqtCyTRl7FlP_8kW_OSM","code_challenge_method":"S256","prompt":"none","response_mode":"query"},"$type":"AuthorizeRequestValidationLog"}
+2019-10-04 13:39:43.998 +08:00 [DBG] IsActive called from: AuthorizeEndpoint
+2019-10-04 13:39:44.009 +08:00 [DBG] Consent found in consent store is same as current request, consent is not required
+2019-10-04 13:39:44.011 +08:00 [DBG] Creating Authorization Code Flow response.
+2019-10-04 13:39:44.031 +08:00 [INF] Authorize endpoint response
+{"SubjectId":"1","ClientId":"js","RedirectUri":"http://localhost:8080/silent-renew-oidc.html","State":"58de44da5517439c8e682e594a314479","Scope":"openid profile vue.api","Error":null,"ErrorDescription":null,"$type":"AuthorizeResponseLog"}
+2019-10-04 13:39:44.371 +08:00 [DBG] CORS request made for path: /connect/token from origin: http://localhost:8080
+2019-10-04 13:39:44.376 +08:00 [DBG] Client list checked and origin: http://localhost:8080 is allowed
+2019-10-04 13:39:44.380 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-10-04 13:39:44.390 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2019-10-04 13:39:44.405 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-10-04 13:39:44.407 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-10-04 13:39:44.426 +08:00 [DBG] Start token request.
+2019-10-04 13:39:44.441 +08:00 [DBG] Start client validation
+2019-10-04 13:39:44.453 +08:00 [DBG] Start parsing Basic Authentication secret
+2019-10-04 13:39:44.461 +08:00 [DBG] Start parsing for secret in post body
+2019-10-04 13:39:44.462 +08:00 [DBG] client id without secret found
+2019-10-04 13:39:44.465 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2019-10-04 13:39:44.466 +08:00 [DBG] Secret id found: js
+2019-10-04 13:39:44.467 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:39:44.474 +08:00 [DBG] Public Client - skipping secret validation success
+2019-10-04 13:39:44.475 +08:00 [DBG] Client validation success
+2019-10-04 13:39:44.499 +08:00 [DBG] Start token request validation
+2019-10-04 13:39:44.535 +08:00 [DBG] Start validation of authorization code token request
+2019-10-04 13:39:44.569 +08:00 [DBG] Client required a proof key for code exchange. Starting PKCE validation
+2019-10-04 13:39:44.576 +08:00 [DBG] IsActive called from: AuthorizationCodeValidation
+2019-10-04 13:39:44.576 +08:00 [DBG] Validation of authorization code token request success
+2019-10-04 13:39:44.582 +08:00 [INF] Token request validation success
+{"ClientId":"js","ClientName":"JavaScript Client","GrantType":"authorization_code","Scopes":null,"AuthorizationCode":"33b0417d18378b65b779661568c90006055f6a354d78838647f5461f7e9148a1","RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"client_id":"js","code":"33b0417d18378b65b779661568c90006055f6a354d78838647f5461f7e9148a1","redirect_uri":"http://localhost:8080/silent-renew-oidc.html","code_verifier":"d1d7ef23f5604303b86a4070e121534fd11bc0c2a3d24c07a8e61b9c737d698c4cd0d08ad1e446829f55074e40cd473e","grant_type":"authorization_code"},"$type":"TokenRequestValidationLog"}
+2019-10-04 13:39:44.609 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:39:44.637 +08:00 [DBG] Getting claims for access token for client: js
+2019-10-04 13:39:44.644 +08:00 [DBG] Getting claims for access token for subject: 1
+2019-10-04 13:39:44.658 +08:00 [DBG] Get profile called for subject 1 from client JavaScript Client with claim types [] via ClaimsProviderAccessToken
+2019-10-04 13:39:44.663 +08:00 [DBG] Issued claims: []
+2019-10-04 13:39:44.773 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:39:44.789 +08:00 [DBG] Getting claims for identity token for subject: 1 and client: js
+2019-10-04 13:39:44.793 +08:00 [DBG] Get profile called for subject 1 from client JavaScript Client with claim types ["name","family_name","given_name","middle_name","nickname","preferred_username","profile","picture","website","gender","birthdate","zoneinfo","locale","updated_at"] via ClaimsProviderIdentityToken
+2019-10-04 13:39:44.803 +08:00 [DBG] Issued claims: ["name","website"]
+2019-10-04 13:39:44.812 +08:00 [DBG] Token request success.
+2019-10-04 13:39:44.832 +08:00 [DBG] CORS request made for path: /connect/userinfo from origin: http://localhost:8080
+2019-10-04 13:39:44.836 +08:00 [DBG] Client list checked and origin: http://localhost:8080 is allowed
+2019-10-04 13:39:44.838 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-10-04 13:39:44.848 +08:00 [DBG] CORS request made for path: /connect/userinfo from origin: http://localhost:8080
+2019-10-04 13:39:44.850 +08:00 [DBG] Client list checked and origin: http://localhost:8080 is allowed
+2019-10-04 13:39:44.852 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:8080
+2019-10-04 13:39:44.854 +08:00 [DBG] Request path /connect/userinfo matched to endpoint type Userinfo
+2019-10-04 13:39:44.858 +08:00 [DBG] Endpoint enabled: Userinfo, successfully created handler: IdentityServer4.Endpoints.UserInfoEndpoint
+2019-10-04 13:39:44.863 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.UserInfoEndpoint for /connect/userinfo
+2019-10-04 13:39:44.875 +08:00 [DBG] Start userinfo request
+2019-10-04 13:39:44.881 +08:00 [DBG] Bearer token found in header
+2019-10-04 13:39:44.968 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:39:44.979 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:39:44.983 +08:00 [DBG] IsActive called from: AccessTokenValidation
+2019-10-04 13:39:44.986 +08:00 [DBG] Calling into custom token validator: IdentityServer4.Validation.DefaultCustomTokenValidator
+2019-10-04 13:39:44.990 +08:00 [DBG] Token validation success
+{"ClientId":null,"ClientName":null,"ValidateLifetime":true,"AccessTokenType":"Jwt","ExpectedScope":"openid","TokenHandle":null,"JwtId":null,"Claims":{"nbf":1570167584,"exp":1570171184,"iss":"http://localhost:5000","aud":["http://localhost:5000/resources","vue.api"],"client_id":"js","sub":"1","auth_time":1570167581,"idp":"local","scope":["openid","profile","vue.api"],"amr":"pwd"},"$type":"TokenValidationLog"}
+2019-10-04 13:39:45.001 +08:00 [DBG] IsActive called from: UserInfoRequestValidation
+2019-10-04 13:39:45.008 +08:00 [DBG] Creating userinfo response
+2019-10-04 13:39:45.015 +08:00 [DBG] Scopes in access token: openid profile vue.api
+2019-10-04 13:39:45.020 +08:00 [DBG] Scopes in access token: openid profile vue.api
+2019-10-04 13:39:45.025 +08:00 [DBG] Requested claim types: sub name family_name given_name middle_name nickname preferred_username profile picture website gender birthdate zoneinfo locale updated_at
+2019-10-04 13:39:45.028 +08:00 [DBG] Scopes in access token: openid profile vue.api
+2019-10-04 13:39:45.029 +08:00 [DBG] Get profile called for subject 1 from client JavaScript Client with claim types ["sub","name","family_name","given_name","middle_name","nickname","preferred_username","profile","picture","website","gender","birthdate","zoneinfo","locale","updated_at"] via UserInfoEndpoint
+2019-10-04 13:39:45.034 +08:00 [DBG] Issued claims: ["name","website"]
+2019-10-04 13:39:45.040 +08:00 [INF] Profile service returned the following claim types: name website
+2019-10-04 13:39:45.043 +08:00 [DBG] End userinfo request
+2019-10-04 13:39:45.070 +08:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2019-10-04 13:39:45.077 +08:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2019-10-04 13:39:45.082 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2019-10-04 13:39:45.092 +08:00 [DBG] Rendering check session result
+2019-10-04 13:39:45.788 +08:00 [DBG] Request path /connect/endsession matched to endpoint type Endsession
+2019-10-04 13:39:45.799 +08:00 [DBG] Endpoint enabled: Endsession, successfully created handler: IdentityServer4.Endpoints.EndSessionEndpoint
+2019-10-04 13:39:45.802 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.EndSessionEndpoint for /connect/endsession
+2019-10-04 13:39:45.828 +08:00 [DBG] Processing signout request for 1
+2019-10-04 13:39:45.840 +08:00 [DBG] Start end session request validation
+2019-10-04 13:39:45.851 +08:00 [DBG] Start identity token validation
+2019-10-04 13:39:45.855 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:39:45.856 +08:00 [DBG] Client found: js / JavaScript Client
+2019-10-04 13:39:45.863 +08:00 [DBG] IsActive called from: IdentityTokenValidation
+2019-10-04 13:39:45.866 +08:00 [DBG] Calling into custom token validator: IdentityServer4.Validation.DefaultCustomTokenValidator
+2019-10-04 13:39:45.870 +08:00 [DBG] Token validation success
+{"ClientId":"js","ClientName":"JavaScript Client","ValidateLifetime":false,"AccessTokenType":null,"ExpectedScope":null,"TokenHandle":null,"JwtId":null,"Claims":{"nbf":1570167584,"exp":1570167884,"iss":"http://localhost:5000","aud":"js","iat":1570167584,"at_hash":"DswLFRakePkHKZ7aQp9tDw","sid":"a99f9b26de57c47a1ee3687d2f1c86fd","sub":"1","auth_time":1570167581,"idp":"local","name":"Alice","website":"https://alice.com","amr":"pwd"},"$type":"TokenValidationLog"}
+2019-10-04 13:39:45.884 +08:00 [INF] End session request validation success
+{"ClientId":"js","ClientName":"JavaScript Client","SubjectId":"1","PostLogOutUri":"http://localhost:8080/index.html","State":null,"Raw":{"id_token_hint":"eyJhbGciOiJSUzI1NiIsImtpZCI6Ijc0YjBjYTdjOTNhMTcxNTFiYmVmNGZmMWEyY2I0NjIyIiwidHlwIjoiSldUIn0.eyJuYmYiOjE1NzAxNjc1ODQsImV4cCI6MTU3MDE2Nzg4NCwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1MDAwIiwiYXVkIjoianMiLCJpYXQiOjE1NzAxNjc1ODQsImF0X2hhc2giOiJEc3dMRlJha2VQa0hLWjdhUXA5dER3Iiwic2lkIjoiYTk5ZjliMjZkZTU3YzQ3YTFlZTM2ODdkMmYxYzg2ZmQiLCJzdWIiOiIxIiwiYXV0aF90aW1lIjoxNTcwMTY3NTgxLCJpZHAiOiJsb2NhbCIsIm5hbWUiOiJBbGljZSIsIndlYnNpdGUiOiJodHRwczovL2FsaWNlLmNvbSIsImFtciI6WyJwd2QiXX0.QY3_ZHu1KfXGUbcTVQ5C9M4DhymxGWXJs6ALyE1XQSUUHRxxAjuiSrRPObRUI07JK40trwxo4D54w24dwC83FJMURhKrW6_BhoXCunmXxDT6hnRyhEq40Z1FCzYCOrXcKbytUb6_FR4UYo3LMFbiA5CW6cxea0QP9HorP2LXNneApnvLhsIwW568CbfZjyXwpKomtqAMwEzgc00TobuQOw9r6K4gR0jWQILfJkD8fV_XzhrvCRRVHPzPG9m_q81yg4vWyoT3RbcvrV0GkOJJbJMjAFUp1tNriZ-IbLClTVdnAlQIWmHyXqm-5Fwt1e2uIIYRbGrxbEQJOvwfZBbbYQ"},"$type":"EndSessionRequestValidationLog"}
+2019-10-04 13:39:45.892 +08:00 [DBG] Success validating end session request from js
+2019-10-04 13:39:52.135 +08:00 [INF] AuthenticationScheme: idsrv signed out.
+2019-10-04 13:39:57.722 +08:00 [DBG] Request path /connect/endsession/callback matched to endpoint type Endsession
+2019-10-04 13:39:57.739 +08:00 [DBG] Endpoint enabled: Endsession, successfully created handler: IdentityServer4.Endpoints.EndSessionCallbackEndpoint
+2019-10-04 13:39:57.759 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.EndSessionCallbackEndpoint for /connect/endsession/callback
+2019-10-04 13:39:57.816 +08:00 [DBG] Processing signout callback request
+2019-10-04 13:39:57.849 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:39:57.871 +08:00 [DBG] No client front-channel logout URLs
+2019-10-04 13:39:57.876 +08:00 [DBG] No client back-channel logout URLs
+2019-10-04 13:39:57.894 +08:00 [INF] Successful signout callback.
+2019-10-04 13:39:57.903 +08:00 [DBG] No client front-channel iframe urls
+2019-10-04 13:39:57.906 +08:00 [DBG] No client back-channel iframe urls
+2019-10-04 13:40:28.004 +08:00 [DBG] Request path /connect/endsession/callback matched to endpoint type Endsession
+2019-10-04 13:40:28.029 +08:00 [DBG] Endpoint enabled: Endsession, successfully created handler: IdentityServer4.Endpoints.EndSessionCallbackEndpoint
+2019-10-04 13:40:28.070 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.EndSessionCallbackEndpoint for /connect/endsession/callback
+2019-10-04 13:40:28.093 +08:00 [DBG] Processing signout callback request
+2019-10-04 13:40:28.100 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:40:28.124 +08:00 [DBG] No client front-channel logout URLs
+2019-10-04 13:40:28.126 +08:00 [DBG] No client back-channel logout URLs
+2019-10-04 13:40:28.127 +08:00 [INF] Successful signout callback.
+2019-10-04 13:40:28.129 +08:00 [DBG] No client front-channel iframe urls
+2019-10-04 13:40:28.137 +08:00 [DBG] No client back-channel iframe urls
+2019-10-04 13:41:00.072 +08:00 [DBG] Request path /connect/endsession/callback matched to endpoint type Endsession
+2019-10-04 13:41:00.088 +08:00 [DBG] Endpoint enabled: Endsession, successfully created handler: IdentityServer4.Endpoints.EndSessionCallbackEndpoint
+2019-10-04 13:41:00.093 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.EndSessionCallbackEndpoint for /connect/endsession/callback
+2019-10-04 13:41:00.103 +08:00 [DBG] Processing signout callback request
+2019-10-04 13:41:00.109 +08:00 [DBG] client configuration validation for client js succeeded.
+2019-10-04 13:41:00.118 +08:00 [DBG] No client front-channel logout URLs
+2019-10-04 13:41:00.124 +08:00 [DBG] No client back-channel logout URLs
+2019-10-04 13:41:00.128 +08:00 [INF] Successful signout callback.
+2019-10-04 13:41:00.135 +08:00 [DBG] No client front-channel iframe urls
+2019-10-04 13:41:00.140 +08:00 [DBG] No client back-channel iframe urls

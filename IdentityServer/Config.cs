@@ -127,9 +127,20 @@ namespace IdentityServer
                     RequireClientSecret = false,
                     AllowAccessTokensViaBrowser=true,
                     AlwaysIncludeUserClaimsInIdToken=true,
-                    RedirectUris =           { "http://localhost:8080/oidc-callback" ,"http://localhost:8080/silent-renew-oidc.html"},
-                    PostLogoutRedirectUris = { "http://localhost:8080/index.html" },
-                    AllowedCorsOrigins =     { "http://localhost:8080" },
+                    RedirectUris =           { 
+                        "http://localhost:8080/oidc-callback" ,
+                        "http://localhost:8080/silent-renew-oidc.html",
+                        "http://47.112.212.161:9100/oidc-callback" ,
+                        "http://47.112.212.161:9100/silent-renew-oidc.html"
+                    },
+                    PostLogoutRedirectUris = {
+                        "http://47.112.212.161:9100/index.html"
+                        //"http://localhost:8080/index.html"//注意：这里只能配置一个登出地址，否则登出无法正常跳转
+                    },
+                    AllowedCorsOrigins =     { 
+                        "http://localhost:8080",
+                        "http://47.112.212.161:9100"
+                    },
                     AllowOfflineAccess=true,
                     AllowedScopes =
                     {
@@ -154,7 +165,10 @@ namespace IdentityServer
                          IdentityServerConstants.StandardScopes.Profile,
                          "vue.api"
                      },
-                     RedirectUris = { "http://localhost:5004/swagger/oauth2-redirect.html" },
+                     RedirectUris = { 
+                         "http://localhost:5004/swagger/oauth2-redirect.html",
+                         "http://47.112.212.161:9102/swagger/oauth2-redirect.html",
+                     },
                      RequireConsent=false,
                      AllowRememberConsent=true,
                      AllowOfflineAccess = true,
