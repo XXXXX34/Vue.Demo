@@ -16,7 +16,8 @@
       <label>低</label> <input type="checkbox"  value="L" v-model="product.leves"/>
     </div>
     <div>
-      <button v-on:click="show">show</button>   <button v-on:click="request">request</button>
+      <button v-on:click="show">show</button>  <br/> 
+      <button v-on:click="request">requestApi</button>
     </div>
     <h1>Lazy</h1>
     <div>
@@ -34,8 +35,8 @@
 </template>
 
 <script>
-    import axios from 'axios';
     import SignedInUser from './SignedInUser.vue'
+    import axios from '../config/axios.js'
 
     export default {
         name: 'Home',

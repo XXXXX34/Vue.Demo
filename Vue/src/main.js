@@ -1,18 +1,17 @@
 import Vue from 'vue';
 import router from './router'
 import App from './App.vue';
-import axios from 'axios';
+//import axios from 'axios';
 import store from './store'
 
 
-
-
-
+/*
 Vue.prototype.$axios = axios
 axios.defaults.baseURL = 'http://localhost:5000/api';
-axios.defaults.headers.common['Authorization'] = "";
+axios.defaults.headers.common['Authorization'] = "Bearer " + store.state.oidcStore.access_token;
 axios.defaults.headers.post['Content-Type'] = 'application/json';
 axios.defaults.headers.put['Content-Type'] = 'application/json';
+*/
 
 Vue.config.productionTip = true;
 
