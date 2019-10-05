@@ -210,3 +210,4 @@ tools/
 # Visual Studio Code workspace options
 .vscode
 /Vue/.vs/Vue.Demo/v16/Server/sqlite3
+/IdentityServer/identityserver4_log.txt

@@ -1,7 +1,7 @@
 <template>
   <div>
         <SignedInUser />
-    <router-link :to="{ name: 'welcome'}">to welcome</router-link>
+    <router-link :to="{name:'welcome'}">to welcome</router-link>
   
     <br/>
     <div>
@@ -26,7 +26,6 @@
       <div>ComputedResult:{{total}}</div>
     </div>
 
-  <div>Search:<input type="text" ></div>
     <ul v-for="(item, index) in product.leves " :key="index">
       <li >{{index}}{{item}}</li>
     </ul>
