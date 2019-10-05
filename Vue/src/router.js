@@ -21,6 +21,9 @@ const router = new Router({
         {
             path: '/welcome',
             component: Welcome,
+            meta: {
+                isPublic: true
+            },
             name: "welcome"
         },
         {

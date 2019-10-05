@@ -2,6 +2,8 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 import { vuexOidcCreateStoreModule } from 'vuex-oidc'
 import { oidcSettings } from './config/oidc'
+import { moduleA } from './myStore';
+
 // NOTE: If you want to customize how tokens are stored you can use WebStorageStateStore from oidc-client (see bellow)
 // Default storage is window.localStorage
 // import { WebStorageStateStore } from 'oidc-client'
@@ -9,7 +11,30 @@ import { oidcSettings } from './config/oidc'
 Vue.use(Vuex)
 
 export default new Vuex.Store({
+    state: {
+        count: 0
+    },
+    mutations: {
+        increment(state) {
+            state.count++
+        }
+    },
+    actions: {
+        /*
+        increment(context) {
+            context.commit("increment");
+        }*/
+        increment({ commit }) {
+            commit("increment");
+        }
+    },
+    getters: {
+        done: state => {
+            return state.count;
+        }
+    },
     modules: {
+        myStore: moduleA,
         oidcStore: vuexOidcCreateStoreModule(
             oidcSettings,
             // NOTE: If you do not want to use localStorage for tokens, in stead of just passing oidcSettings, you can
