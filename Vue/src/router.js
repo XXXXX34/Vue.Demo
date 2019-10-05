@@ -10,7 +10,6 @@ import store from './store'
 Vue.use(Router)
 
 const router = new Router({
-    //mode: 'history',
     routes: [{
             path: '/',
             component: Home,
@@ -19,16 +18,20 @@ const router = new Router({
             },
             name: "home"
         },
-        { path: '/welcome', component: Welcome, name: "welcome" },
+        {
+            path: '/welcome',
+            component: Welcome,
+            name: "welcome"
+        },
         {
             path: '/protected',
             name: 'protected',
             component: () =>
-                import ( /* webpackChunkName: "protected" */ './components/Protected.vue')
+                import ('./components/Protected.vue')
         },
         { path: '/oidc-callback', component: OidcCallback, name: "oidcCallback" },
         {
-            path: '/oidc-callback-error', // Needs to match redirect_uri in you oidcSettings
+            path: '/oidc-callback-error',
             name: 'oidcCallbackError',
             component: OidcCallbackError,
             meta: {
