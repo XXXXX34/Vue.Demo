@@ -2,7 +2,8 @@
   <div>
         <SignedInUser />
     <router-link :to="{name:'welcome'}">to welcome</router-link><br/>
-    <router-link :to="{name:'table'}">to vuetable-2</router-link>
+    <router-link :to="{name:'table'}">to vuetable-2</router-link><br/>
+    <button v-on:click="showModal">showModal</button>
   
     <br/>
     <div>
@@ -37,6 +38,7 @@
 <script>
     import SignedInUser from './SignedInUser.vue'
     import axios from '../config/axios.js'
+    import ModalDemo from './ModalDemo.vue'
 
     export default {
         name: 'Home',
@@ -55,6 +57,14 @@
         methods: {
             show: function() {
                 alert(JSON.stringify(this.product));
+            },
+            showModal() {
+                this.$modal.show(ModalDemo, {
+                    text: 'This text is passed as a property'
+                }, {
+                    draggable: true,
+                    clickToClose: false
+                })
             },
             request: function() {
                 axios.get('/values')

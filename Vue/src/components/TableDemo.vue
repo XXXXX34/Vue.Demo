@@ -56,6 +56,7 @@
                 this.loadData();
             },
             pageSizeChange(newPageSize) {
+                this.pageIndex = 1;
                 this.pageSize = newPageSize;
                 this.loadData();
             },
@@ -82,7 +83,6 @@
             }
         },
         created() {
-            this.total = 10000;
             this.loadData();
         }
     }
