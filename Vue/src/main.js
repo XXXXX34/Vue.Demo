@@ -2,6 +2,12 @@ import Vue from 'vue';
 import router from './router'
 import App from './App.vue';
 import store from './store'
+// 导入 table 和 分页组件
+import { VTable, VPagination } from 'vue-easytable'
+
+// 注册到全局
+Vue.component(VTable.name, VTable)
+Vue.component(VPagination.name, VPagination)
 
 Vue.config.productionTip = true;
 
@@ -11,14 +17,9 @@ Vue.filter('capitalize', function(value) {
     return value.charAt(0).toUpperCase() + value.slice(1)
 });
 
-Vue.config.devtools = process.env.NODE_ENV === 'development';
 
-var app = new Vue({
+new Vue({
     router: router,
     store,
     render: h => h(App)
 }).$mount('#app');
-
-
-window.__VUE_DEVTOOLS_GLOBAL_HOOK__.Vue = app.constructor;
-Vue.config.devtools = process.env.NODE_ENV === 'development';

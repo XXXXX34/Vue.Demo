@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './components/Home.vue'
 import Welcome from './components/Welcome.vue'
+import TableDemo from './components/TableDemo.vue'
 import OidcCallback from './components/OidcCallback.vue'
 import OidcCallbackError from './components/OidcCallbackError.vue'
 import { vuexOidcCreateRouterMiddleware } from 'vuex-oidc'
@@ -25,6 +26,14 @@ const router = new Router({
                 isPublic: true
             },
             name: "welcome"
+        },
+        {
+            path: '/table',
+            component: TableDemo,
+            meta: {
+                isPublic: true
+            },
+            name: "table"
         },
         {
             path: '/protected',

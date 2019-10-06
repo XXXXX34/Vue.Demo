@@ -1,7 +1,8 @@
 <template>
   <div>
         <SignedInUser />
-    <router-link :to="{name:'welcome'}">to welcome</router-link>
+    <router-link :to="{name:'welcome'}">to welcome</router-link><br/>
+    <router-link :to="{name:'table'}">to vuetable-2</router-link>
   
     <br/>
     <div>

@@ -21,11 +21,12 @@
         "vuex-oidc": "^3.1.5"
     },
     "devDependencies": {
-        "@vue/cli-plugin-babel": "3.0.4",
+        "@vue/cli-plugin-babel": "^3.11.0",
         "@vue/cli-plugin-eslint": "3.0.4",
-        "@vue/cli-service": "3.0.4",
+        "@vue/cli-service": "^3.11.0",
         "eslint": "5.6.0",
         "eslint-plugin-vue": "4.7.1",
+        "vue-easytable": "^1.7.2",
         "vue-template-compiler": "2.5.17"
     },
     "eslintConfig": {
