@@ -11,8 +11,14 @@ Vue.filter('capitalize', function(value) {
     return value.charAt(0).toUpperCase() + value.slice(1)
 });
 
-new Vue({
+Vue.config.devtools = process.env.NODE_ENV === 'development';
+
+var app = new Vue({
     router: router,
     store,
     render: h => h(App)
 }).$mount('#app');
+
+
+window.__VUE_DEVTOOLS_GLOBAL_HOOK__.Vue = app.constructor;
+Vue.config.devtools = process.env.NODE_ENV === 'development';
