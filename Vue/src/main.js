@@ -13,6 +13,10 @@ import VuejsDialog from 'vuejs-dialog';
 import VuejsDialogMixin from 'vuejs-dialog/dist/vuejs-dialog-mixin.min.js'; // only needed in custom components
 import 'vuejs-dialog/dist/vuejs-dialog.min.css';
 
+//vue-progressbar
+import VueProgressBar from 'vue-progressbar'
+
+
 // 注册到全局
 Vue.component(VTable.name, VTable);
 Vue.component(VPagination.name, VPagination);
@@ -24,6 +28,22 @@ Vue.use(VModal, { dynamic: true, injectModalsContainer: true, dynamicDefaults: {
 Vue.use(VuejsDialog);
 console.log(VuejsDialogMixin);
 
+//vue-progressbar
+const options = {
+    //color: '#bffaf3',
+    //failedColor: '#874b4b',
+    thickness: '5px',
+    transition: {
+        speed: '0.2s',
+        opacity: '0.6s',
+        termination: 300
+    },
+    autoRevert: true,
+    location: 'top',
+    inverse: false
+}
+Vue.use(VueProgressBar, options);
+
 Vue.config.productionTip = true;
 
 Vue.filter('capitalize', function(value) {
@@ -33,8 +53,10 @@ Vue.filter('capitalize', function(value) {
 });
 
 
-new Vue({
+var app = new Vue({
     router: router,
     store,
     render: h => h(App)
 }).$mount('#app');
+
+export default app;

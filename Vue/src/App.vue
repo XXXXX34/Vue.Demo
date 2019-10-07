@@ -4,6 +4,7 @@
       <router-link to="/">Home</router-link> |
       <router-link to="/protected">Protected</router-link>
       <router-view/>
+      <vue-progress-bar></vue-progress-bar>
   </div>
 </template>
 
@@ -38,6 +39,7 @@
             window.removeEventListener('vuexoidc:userLoaded', this.userLoaded)
             window.removeEventListener('vuexoidc:oidcError', this.oidcError)
         }
+
     }
 </script>
 
